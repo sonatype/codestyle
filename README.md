@@ -14,3 +14,11 @@
 -->
 # Sonatype Codestyle
 
+Contains codestyle configuration for:
+
+* IDEA
+* Eclispe
+
+And some reference examples (which won't compile so don't even try) to help refine the style properly in
+supported environments.
+

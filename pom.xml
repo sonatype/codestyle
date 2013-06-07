@@ -9,4 +9,8 @@
   <artifactId>codestyle</artifactId>
   <version>ignore</version>
 
+  <description>
+    Project here is only to simplify importing reference examples into target IDE.
+  </description>
+
 </project>

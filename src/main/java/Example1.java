@@ -1,4 +1,4 @@
-public class Foo
+public class Example1
 {
   public int[] X = new int[]{1, 3, 5 7, 9, 11};
 

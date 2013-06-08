@@ -43,7 +43,7 @@ Order:
 * _other_
 * _static_
 
-Wildcard threshholds:
+Wildcard thresholds:
 
 * 100 non-static
 * 10 static

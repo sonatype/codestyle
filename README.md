@@ -50,7 +50,7 @@ Wildcard import thredholds:
 
 ## Notes
 
-Has similarties with "The elements of Java style" (booK), Google and Eclipse styles with some minor changes
+Has similarties with "The elements of Java style" (book), Google and Eclipse styles with some minor changes
 for clarity and readability:
 
 * Class/intf/enum declarations are multiline

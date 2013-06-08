@@ -22,6 +22,32 @@ Contains codestyle configuration for:
 And some reference examples (which won't compile so don't even try) to help refine the style properly in
 supported environments.
 
+## Basics
+
+### General
+
+120 column right margin
+
+2 space indent for ALL formats
+
+NO TABS
+
+### Imports
+
+Order:
+
+* java
+* javax
+* com.sonatype
+* org.sonatype
+* <other>
+* <static>
+
+Wildcard import thredholds:
+
+* 100 non-static
+* 10 static
+
 ## Notes
 
 Has similarties with Google and Eclipse styles with some minor changes for clarity and readability:

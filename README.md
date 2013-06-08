@@ -50,7 +50,8 @@ Wildcard import thredholds:
 
 ## Notes
 
-Has similarties with Google and Eclipse styles with some minor changes for clarity and readability:
+Has similarties with "The elements of Java style" (booK), Google and Eclipse styles with some minor changes
+for clarity and readability:
 
 * Class/intf/enum declarations are multiline
 * if/try/while blocks have new-lines after '}'
@@ -68,5 +69,5 @@ It should be possible to craft seperate configurations which are _mostly_ compat
 reformatting is done in a sane manner.
 
 *DO NOT* reformat entire codebases, but reformat as sources are touched to normalize.   Or normalize and _santizie_
-one by one, as the code formatters (IDEA or Eclispe) tend to create some formats which can and *SHOULD* be manually
-cleaned up, else the code will end up *LESS* readable.
+one by one, as the code formatters (IDEA or Eclispe) tend to create some formats which can and **SHOULD** be manually
+cleaned up, else the code will end up **LESS** readable.

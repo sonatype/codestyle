@@ -68,6 +68,6 @@ configuration for import handling, etc which is not ideal.
 It should be possible to craft seperate configurations which are _mostly_ compatible and thus avoid _most_ noise if
 reformatting is done in a sane manner.
 
-*DO NOT* reformat entire codebases, but reformat as sources are touched to normalize.   Or normalize and _santizie_
+**DO NOT** reformat entire codebases, but reformat as sources are touched to normalize.   Or normalize and _santizie_
 one by one, as the code formatters (IDEA or Eclispe) tend to create some formats which can and **SHOULD** be manually
 cleaned up, else the code will end up **LESS** readable.

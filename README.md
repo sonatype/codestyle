@@ -28,9 +28,9 @@ supported environments.
 
 120 column right margin
 
-2 space indent for ALL formats
+2 space indent for *ALL* formats
 
-NO TABS
+*NO TABS*
 
 ### Imports
 
@@ -40,8 +40,8 @@ Order:
 * javax
 * com.sonatype
 * org.sonatype
-* <other>
-* <static>
+* _other_
+* _static_
 
 Wildcard import thredholds:
 

@@ -22,6 +22,9 @@ Contains codestyle configuration for:
 And some reference examples (which won't compile so don't even try) to help refine the style properly in
 supported environments.
 
+The reference examples should reflect the desired format.  The IDE configurations may not support or respect this, 
+which is okay while we're developing the format and auto-formatters.
+
 ## Basics
 
 ### General

@@ -18,8 +18,16 @@
  */
 public class Comments
 {
-  Type t = new Type(firstParameter, // this is supposed to be single line, using a lot of text to show off long lines
-      secondParameter, // this is single line
-      thirdParameter);
+  class Type
+  {
+    Type(Object... parameters) {
+    }
+  }
+
+  public void foo() {
+    Type t = new Type("firstParameter", // this is supposed to be single line, using a lot of text to show off long lines
+        "secondParameter", // this is single line
+        "thirdParameter");
+  }
 
 }

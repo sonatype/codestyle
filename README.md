@@ -53,7 +53,7 @@ Wildcard thresholds:
 
 ## Notes
 
-Has similarities with "The elements of Java style" (book), Google and Eclipse styles with some minor changes
+Has similarities with "[The Elements of Java Style][java style pdf]" (book), Google and Eclipse styles with some minor changes
 for clarity and readability:
 
 * Class/intf/enum declarations are multiline
@@ -74,3 +74,5 @@ reformatting is done in a sane manner.
 **DO NOT** reformat entire codebases, but reformat as sources are touched to normalize.   Or normalize and _santizie_
 one by one, as the code formatters (IDEA or Eclipse) tend to create some formats which can and **SHOULD** be manually
 cleaned up, else the code will end up **LESS** readable.
+
+[java style pdf]:  http://its.lnpu.edu.ua/edocs1/new_doc/en/Vermeulen%20A.The%20elements%20of%20Java%20style.2001.pdf

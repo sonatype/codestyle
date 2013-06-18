@@ -175,7 +175,7 @@
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_comma_in_type_parameters" value="do not insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_opening_angle_bracket_in_type_parameters" value="do not insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.blank_lines_before_imports" value="1"/>
-<setting id="org.eclipse.wst.jsdt.core.formatter.keep_imple_if_on_one_line" value="true"/>
+<setting id="org.eclipse.wst.jsdt.core.formatter.keep_imple_if_on_one_line" value="false"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_after_opening_paren_in_while" value="do not insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_closing_paren_in_constructor_declaration" value="do not insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.alignment_for_binary_expression" value="16"/>

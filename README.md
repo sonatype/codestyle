@@ -75,4 +75,9 @@ reformatting is done in a sane manner.
 one by one, as the code formatters (IDEA or Eclipse) tend to create some formats which can and **SHOULD** be manually
 cleaned up, else the code will end up **LESS** readable.
 
+## Javascript
+
+Follows "[Google Javascript Style Guide][javascript style page]" with 2 space indents to conform with Java code. Note that IDEA styles import at a global level such that sonatype-idea.xml will import both Java and Javascript style conventions.
+
 [java style pdf]:  http://its.lnpu.edu.ua/edocs1/new_doc/en/Vermeulen%20A.The%20elements%20of%20Java%20style.2001.pdf
+[javascript style page]: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml

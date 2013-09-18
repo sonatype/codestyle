@@ -229,7 +229,7 @@
 <setting id="org.eclipse.wst.jsdt.core.formatter.comment.insert_new_line_for_parameter" value="insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.brace_position_for_type_declaration" value="end_of_line"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_colon_in_object_initializer" value="do not insert"/>
-<setting id="org.eclipse.wst.jsdt.core.formatter.comment.line_length" value="80"/>
+<setting id="org.eclipse.wst.jsdt.core.formatter.comment.line_length" value="120"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_after_comma_in_method_declaration_throws" value="insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.alignment_for_parameters_in_method_declaration" value="16"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.brace_position_for_block" value="end_of_line"/>

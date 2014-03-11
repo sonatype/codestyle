@@ -25,6 +25,12 @@ supported environments.
 The reference examples should reflect the desired format.  The IDE configurations may not support or respect this, 
 which is okay while we're developing the format and auto-formatters.
 
+## Installation
+
+### IntelliJ IDEA
+
+Copy the file `sonatype-idea.xml` into `*<user-home>*/.IntelliJIdea13/config/codstyles`.
+
 ## Basics
 
 ### General

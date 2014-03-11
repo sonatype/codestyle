@@ -29,7 +29,7 @@ which is okay while we're developing the format and auto-formatters.
 
 ### IntelliJ IDEA
 
-Copy the file `sonatype-idea.xml` into `*<user-home>*/.IntelliJIdea13/config/codstyles`.
+Copy the file `sonatype-idea.xml` into *<user-home>*/.IntelliJIdea13/config/codstyles.
 
 ## Basics
 

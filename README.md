@@ -35,6 +35,11 @@ OSX: `cp sonatype-idea.xml ~/Library/Preferences/IntelliJIdea13/codestyles/`
 
 Restart IDEA
 
+### Eclipse
+
+See [the eclipse documentation](http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fcodestyle%2Fref-preferences-formatter.htm) for how to import the files into your IDE.
+In addition, html indentation settings are not exported, but can be set to 2 spaces from Preferences -> Web -> HTML Files -> Editor -> "Indent using spaces". [Screenshot of the eclipse config here.](https://s3.amazonaws.com/uploads.hipchat.com/18157/88592/RSkQhq8UYnxf81Z/upload.png)
+
 ## Basics
 
 ### General

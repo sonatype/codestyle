@@ -63,6 +63,12 @@ public class Example1
     }
   }
 
+  public void multiLineMethod(MyReallyLongClassName foo, MyOtherReallyLongClassName bar,
+      MyOtherOtherReallyLongClassName zar)
+  {
+    //do stuff
+  }
+
   private class InnerClass
       implements I1, I2
   {

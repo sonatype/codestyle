@@ -8,7 +8,7 @@ public class Example1
 {
   private static final long serialVersionUID = 4946535894651225728L;
 
-  public int[] X = new int[]{1, 3, 5 7, 9, 11};
+  public int[] X = new int[]{1, 3, 5, 7, 9, 11};
 
   public void foo(boolean a, int x, int y, int z) throws IOException {
     label1:

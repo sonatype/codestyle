@@ -73,7 +73,25 @@
   <option name="FOR_BRACE_FORCE" value="1" />
   <option name="ENUM_CONSTANTS_WRAP" value="2" />
   <GroovyCodeStyleSettings>
-    <option name="INDENT_LABEL_BLOCKS" value="true" />
+    <option name="USE_FQ_CLASS_NAMES_IN_JAVADOC" value="false" />
+    <option name="INSERT_INNER_CLASS_IMPORTS" value="true" />
+    <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="100" />
+    <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="10" />
+    <option name="IMPORT_LAYOUT_TABLE">
+      <value>
+        <package name="java" withSubpackages="true" static="false" />
+        <emptyLine />
+        <package name="javax" withSubpackages="true" static="false" />
+        <emptyLine />
+        <package name="com.sonatype" withSubpackages="true" static="false" />
+        <emptyLine />
+        <package name="org.sonatype" withSubpackages="true" static="false" />
+        <emptyLine />
+        <package name="" withSubpackages="true" static="false" />
+        <emptyLine />
+        <package name="" withSubpackages="true" static="true" />
+      </value>
+    </option>
   </GroovyCodeStyleSettings>
   <JSCodeStyleSettings>
     <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
@@ -132,10 +150,10 @@
     <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
     <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
     <option name="WRAP_COMMENTS" value="true" />
-    <option name="IF_BRACE_FORCE" value="1" />
-    <option name="DOWHILE_BRACE_FORCE" value="3" />
-    <option name="WHILE_BRACE_FORCE" value="1" />
-    <option name="FOR_BRACE_FORCE" value="1" />
+    <option name="IF_BRACE_FORCE" value="3" />
+    <option name="WHILE_BRACE_FORCE" value="3" />
+    <option name="FOR_BRACE_FORCE" value="3" />
+    <option name="WRAP_LONG_LINES" value="true" />
     <option name="PARENT_SETTINGS_INSTALLED" value="true" />
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
@@ -165,6 +183,7 @@
     <option name="ALIGN_MULTILINE_THROWS_LIST" value="true" />
     <option name="ALIGN_MULTILINE_EXTENDS_LIST" value="true" />
     <option name="ALIGN_MULTILINE_ARRAY_INITIALIZER_EXPRESSION" value="true" />
+    <option name="SPACE_WITHIN_BRACES" value="true" />
     <option name="CALL_PARAMETERS_WRAP" value="1" />
     <option name="METHOD_PARAMETERS_WRAP" value="1" />
     <option name="EXTENDS_LIST_WRAP" value="1" />

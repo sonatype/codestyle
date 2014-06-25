@@ -81,6 +81,8 @@ class Foo
 // BEGIN Wrapping and Braces example
 /*
  * This is a sample file.
+ * NOTE: Many of the truncated lines are on purpose to demonstrate wrapping, not
+ * the result of the formatter introducing a newline to enforce style.
  */
 
 public class ThisIsASampleClass

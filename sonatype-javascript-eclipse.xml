@@ -118,7 +118,7 @@
 <setting id="org.eclipse.wst.jsdt.core.compiler.source" value="1.5"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.use_tabs_only_for_leading_indentations" value="false"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_after_at_in_annotation_type_declaration" value="do not insert"/>
-<setting id="org.eclipse.wst.jsdt.core.formatter.insert_new_line_at_end_of_file_if_missing" value="do not insert"/>
+<setting id="org.eclipse.wst.jsdt.core.formatter.insert_new_line_at_end_of_file_if_missing" value="insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_colon_in_conditional" value="insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_opening_brace_in_enum_constant" value="insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_opening_angle_bracket_in_parameterized_type_reference" value="do not insert"/>

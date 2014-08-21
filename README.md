@@ -50,6 +50,8 @@ In addition, html indentation settings are not exported, but can be set to 2 spa
 
 **NO TABS**
 
+Newline at end of file
+
 ### Imports
 
 Order:

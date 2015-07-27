@@ -29,9 +29,9 @@ which is okay while we're developing the format and auto-formatters.
 
 ### IntelliJ IDEA
 
-Linux: `cp sonatype-idea.xml ~/.IntelliJIdea13/config/codestyles`.
+Linux: `cp sonatype-idea.xml ~/.IntelliJIdea14/config/codestyles`.
 
-OSX: `cp sonatype-idea.xml ~/Library/Preferences/IntelliJIdea13/codestyles/`
+OSX: `cp sonatype-idea.xml ~/Library/Preferences/IntelliJIdea14/codestyles/`
 
 Restart IDEA
 

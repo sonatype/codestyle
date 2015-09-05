@@ -61,10 +61,6 @@ At Sonatype we value the stability and maintainability of the code base while st
 * Angular component names, except for directives, should be suffixed by their type
   * Appending the component type to its name allows the consumer to easily understand its type and function
   * Directives are not suffixed to prevent the extra HTML markup required to reference them
-  * bar.service.js
-```javascript
-  angular.service('bar.service', BarService);
-```
   * qux.directive.js
 ```javascript
   angular.directive('qux', QuxDirective);
@@ -98,7 +94,7 @@ At Sonatype we value the stability and maintainability of the code base while st
   * This prevents long lists of dependencies to interfect with code legibility
   * This prevents code churn from how Eclipse and IDEA format these arrays
 ```javascript
-  function FooController('$state') {
+  function FooController($state) {
     /* code block */
   }
   FooController.$inject = ['$state'];

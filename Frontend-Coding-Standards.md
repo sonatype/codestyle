@@ -56,18 +56,18 @@ At Sonatype we value the stability and maintainability of the code base while st
   * This allows developers to easily find code
   * foo.controller.js
 ```javascript
-  angular.controller('FooController', FooController);
+  angular.controller('foo.controller', FooController);
 ```
 * Angular component names, except for directives, should be suffixed by their type
   * Appending the component type to its name allows the consumer to easily understand its type and function
   * Directives are not suffixed to prevent the extra HTML markup required to reference them
   * bar.service.js
 ```javascript
-  angular.service('BarService', BarService);
+  angular.service('bar.service', BarService);
 ```
   * qux.directive.js
 ```javascript
-  angular.directive('Qux', QuxDirective);
+  angular.directive('qux', QuxDirective);
 ```
 * Angular templates should share the name of their directive or view
   * qux.directive.html <-> qux.directive.js
@@ -92,7 +92,7 @@ At Sonatype we value the stability and maintainability of the code base while st
   function FooController() {
     /* code block */
   }
-  angular.controller('FooController', FooController);
+  angular.controller('foo.controller', FooController);
 ```
 * We utilize an Angular components $inject array to declare dependencies
   * This prevents long lists of dependencies to interfect with code legibility

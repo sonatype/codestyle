@@ -99,6 +99,22 @@ At Sonatype we value the stability and maintainability of the code base while st
   }
   FooController.$inject = ['$state'];
 ```
+* We place bindable members on the top of Angular controllers
+  * We value digestable code that is easily accessible when reading the files
+  * We understand that this requires the (ab)use of Javascripts hoisting
+  * We believe that the advantages of clearly indicated bindable members outways the disadvantages of obscured code
+```javascript
+  function FooController() {
+    var vm = this;
+
+    vm.bar = Bar;
+    vm.foo = 'foo';
+
+    function Bar() {
+      /* code block */
+    }
+  }
+```
 
 # Jasmine Development
 * Jasmine root describe should share the name of the containing file

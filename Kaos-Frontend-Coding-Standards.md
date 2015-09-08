@@ -1,4 +1,6 @@
-# Sonatype Frontend Coding Standards
+# Sonatype Kaos Frontend Coding Standards
+
+*Note: This guide applies only to the Kaos team which works on the Nexus Lifecycle products.*
 
 At Sonatype we value the stability and maintainability of the code base while stressing the ability of the developers to quickly understand, consume and update the code base. We adopt code practices which facilitate our developers in rapidly creating new features without jeopardizing the existing feature set. Below are a set of code guidelines that we enforce in order to ensure that our values are upheld. The guidelines are short and written with consideration that different developers approach problems differently; they focus on practices that we have found optimize our ability to do our job without stifiling the process of development. This document is maintained in source control and therefore fluid, we encourage pull requests so that our code guidelines improve with our team.
 

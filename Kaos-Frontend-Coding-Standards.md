@@ -36,6 +36,8 @@ At Sonatype we value the stability and maintainability of the code base while st
 * We use strict mode for all javascript execution
   * We value failing fast and encourage all errors to be thrown
   * We value security and the enhancements enforced by strict more
+* We prefer descriptive names for functions and variables rather than commenting
+  * Of course, sometimes that may not be enough, and a comment would aide in understanding, left to developer's discretion
 
 ## AngularJS Naming Standards
 * Modules should be defined in a parent folder with granular division of Angular component files in individual folders divided by business value

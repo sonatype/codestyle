@@ -46,12 +46,12 @@ At Sonatype we value the stability and maintainability of the code base while st
 ```
   /Stores
   ../Configuration
-  ../../application-store.service.js
-  ../../organization-store.service.js
+  ../../application.store.service.js
+  ../../organization.store.service.js
   /Configuration
   ../Owner
-  ../../owner-editor.directive.js
-  ../../owner-editor.directive.html
+  ../../owner.editor.directive.js
+  ../../owner.editor.directive.html
   ../Label
   ../../label.controller.js
   ../../label.view.html

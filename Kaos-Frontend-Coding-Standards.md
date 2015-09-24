@@ -103,6 +103,12 @@ At Sonatype we value the stability and maintainability of the code base while st
   }
   FooController.$inject = ['$state'];
 ```
+#### HTML
+* Native attributes should be defined prior to custom attributes
+  * This increases readabilities due to the ordering/organizing of the attributes
+```html
+  <textarea id="foo" class="bar" name="name" rows="2" ng-model="baz" ng-maxlength="255"></textarea> 
+```
 
 # Jasmine Development
 * Jasmine root describe should share the name of the containing file

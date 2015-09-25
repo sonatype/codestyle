@@ -103,6 +103,23 @@ At Sonatype we value the stability and maintainability of the code base while st
   }
   FooController.$inject = ['$state'];
 ```
+* We utilize the controllerAs syntax
+  * This isolates the view model to the controller or directive
+  * This prevents the temptation to walk through the scope hierarchy
+  * This provides a clear view of which properties belong to which objects, especially with name collisions
+```javascript
+  function FooController() {
+    var vm = this;
+
+    vm.bar = 'baz';
+  }
+  $stateProvider.state('foo', {
+    url: '/foo',
+    controller: FooController,
+    controllerAs: 'foo',
+    template: '<div>{{ foo.var }}</div>'
+  });
+```
 
 # Jasmine Development
 * Jasmine root describe should share the name of the containing file

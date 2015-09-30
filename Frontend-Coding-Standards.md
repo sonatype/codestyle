@@ -136,6 +136,29 @@ At Sonatype we value the stability and maintainability of the code base while st
   }
 ```
 
+* We order the bindable members at the top 
+  * The member variables should come before the member functions
+  * Within the member variables/function should be ordered alphabetically
+```javascript
+  function FooController() {
+    var vm = this;
+
+    vm.error = undefined;
+    vm.foo = 'foo';
+    vm.bar = Bar;
+    vm.num = Num;
+
+    function Bar() {
+      /* code block */
+      vm.error = "error";
+    }
+
+    function Num() {
+      /* code block */
+    }
+  }
+```
+
 # Jasmine Development
 * Jasmine root describe should share the name of the containing file
   * This allows developers to easily locate code for failing tests

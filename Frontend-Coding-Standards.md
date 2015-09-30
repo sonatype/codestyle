@@ -120,6 +120,22 @@ At Sonatype we value the stability and maintainability of the code base while st
   }
 ```
 
+  * We denote future bindable members at the top of Angular controllers
+```javascript
+  function FooController() {
+    var vm = this;
+
+    vm.error = undefined;
+    vm.bar = Bar;
+    vm.foo = 'foo';
+
+    function Bar() {
+      /* code block */
+      vm.error = "error";
+    }
+  }
+```
+
 # Jasmine Development
 * Jasmine root describe should share the name of the containing file
   * This allows developers to easily locate code for failing tests

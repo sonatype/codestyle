@@ -85,6 +85,13 @@ At Sonatype we value the stability and maintainability of the code base while st
   * This enforces the separation of view and controller
   * Performance concerns can be mitigated by compiling the markup into Javascript during the build
   * HTML in Javascript is difficult to read and maintain
+* Initialization code should be separated by new lines and indented with 4 spaces
+  * We add comments to the end of the lines to help formatting with the Eclipse IDE
+```javascript
+  angular//
+      .module(...)//
+      .controller(...);
+```
 * Component function should exist at the top of the code file
   * This highlights the core logic over the boiler plate code
   * This prevents unnecessary abuse of Javascript's hoisting
@@ -92,7 +99,8 @@ At Sonatype we value the stability and maintainability of the code base while st
   function FooController() {
     /* code block */
   }
-  angular.controller('foo.controller', FooController);
+  angular//
+      .controller('foo.controller', FooController);
 ```
 * We utilize an Angular components $inject array to declare dependencies
   * This prevents long lists of dependencies to interfect with code legibility

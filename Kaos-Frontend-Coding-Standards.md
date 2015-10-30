@@ -103,6 +103,8 @@ At Sonatype we value the stability and maintainability of the code base while st
   }
   FooController.$inject = ['$state'];
 ```
+
+### AngularJS Development - Controllers
 * We utilize the controllerAs syntax
   * This isolates the view model to the controller or directive
   * This prevents the temptation to walk through the scope hierarchy
@@ -152,6 +154,10 @@ At Sonatype we value the stability and maintainability of the code base while st
     }
   }
 ```
+
+### AngularJS Development - Directives
+* For directives, we use an element restriction when "creating a component that is in control of its template" and an attribute restriction when "decorating an existing element with new functionality".
+  * This is inline with the Angular documentation as seen in ["When should I use an attribute versus an element?"](https://docs.angularjs.org/guide/directive)
 
 # Jasmine Development
 * Jasmine root describe should share the name of the containing file

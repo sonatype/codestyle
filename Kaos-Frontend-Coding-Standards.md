@@ -159,3 +159,6 @@ At Sonatype we value the stability and maintainability of the code base while st
 * There should be a single jasmine file for each Angular component
   * This mirrors the file structure of the source code
   * This enforces smaller test files for easy consumption
+
+# Style guidelines
+* One-off styles should be referenced by ID and do not neeed a styleguide example

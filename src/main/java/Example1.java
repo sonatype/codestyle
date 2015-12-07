@@ -10,6 +10,16 @@ public class Example1
 
   public int[] X = new int[]{1, 3, 5, 7, 9, 11};
 
+  public Example1(boolean a, int x, int y, int z) throws IOException {
+  }
+
+  public Example1(MyReallyLongClassName foo,
+                  MyOtherReallyLongClassName bar,
+                  MyOtherOtherReallyLongClassName car,
+                  MyOtherOtherReallyLongClassName zar) throws IOException
+  {
+  }
+  
   public void foo(boolean a, int x, int y, int z) throws IOException {
     label1:
     do {
@@ -63,8 +73,9 @@ public class Example1
     }
   }
 
-  public void multiLineMethod(MyReallyLongClassName foo, MyOtherReallyLongClassName bar,
-      MyOtherOtherReallyLongClassName zar)
+  public void multiLineMethod(MyReallyLongClassName foo,
+                              MyOtherReallyLongClassName bar,
+                              MyOtherOtherReallyLongClassName zar) throws IOException
   {
     //do stuff
   }

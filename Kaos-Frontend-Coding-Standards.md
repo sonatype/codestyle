@@ -170,5 +170,5 @@ At Sonatype we value the stability and maintainability of the code base while st
 * One-off styles should be referenced by ID and do not neeed a styleguide example
 
 # Selenide Development
-* Typically our page objects contain a root object, in cases where that root selector is known (i.e. #someid) we should use that in subqueries directly
-  * Replace root.$(".someclass") with $("#someid .someclass") to save roundtrips
+* Typically our page objects contain a method for to retrieve a root object, in cases where that root selector is known (i.e. #someid) we should use that in subqueries directly
+  * Replace root().$(".someclass") with $("#someid .someclass") to save roundtrips

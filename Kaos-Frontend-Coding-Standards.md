@@ -99,9 +99,16 @@ At Sonatype we value the stability and maintainability of the code base while st
   * This prevents code churn from how Eclipse and IDEA format these arrays
 ```javascript
   function FooController($state) {
+
     /* code block */
   }
   FooController.$inject = ['$state'];
+```
+#### HTML
+* Attributes should be ordered according to the following priorities
+  * ```id``` > ```class``` > others
+```html
+  <textarea id="foo" class="bar" name="name" rows="2" ng-model="baz" ng-maxlength="255"></textarea> 
 ```
 
 ### AngularJS Development - Controllers

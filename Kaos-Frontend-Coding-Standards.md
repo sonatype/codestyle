@@ -173,4 +173,4 @@ At Sonatype we value the stability and maintainability of the code base while st
 * Typically our page objects contain a root object, in cases where that root selector is known (i.e. #someid) we should use that in subqueries directly
   * Replace root.$(".someclass") with $("#someid .someclass") to save roundtrips
 * Rather than query for a list of elements and grab a certain one, tighten up the css selector to get the desired item back directly
-  * Replace root.$$(".someclass").get(0) with root.$(".someclass:first-child") or root.$(".someclass:nth-child(7)") for example
+  * Replace $$(".someclass").get(0) with $(".someclass:first-child") or $(".someclass:nth-child(7)") for example

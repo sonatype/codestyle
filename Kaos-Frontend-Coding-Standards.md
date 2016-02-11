@@ -161,20 +161,20 @@ At Sonatype we value the stability and maintainability of the code base while st
 
 * We place dependent controllers and links below the directive function
 ```javascript
-  function FooDirective(...) {
+  function Foo(...) {
     return {
       controller: FooController,
       link: FooLink
     };
+
+    function FooLink(...) {...}
   }
 
-  FooDirective.$inject = [...];
+  Foo.$inject = [...];
 
   function FooController(...) {...}
 
   FooController.$inject = [...];
-
-  function FooLink() {...}
 ```
 
 # Jasmine Development

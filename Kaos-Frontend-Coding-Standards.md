@@ -74,7 +74,7 @@ At Sonatype we value the stability and maintainability of the code base while st
   * baz.view.html <-> baz.controller.js
 
 ## AngularJS Development
-* Each Angular Component should exist in it's own file
+* Each Angular Component should exist in it's own file, if it is independent
   * We value the ability to easily find where code resides
   * We understand that small code files encourages the decomposition of a problem
   * We follow other language practices of encapsolating one object into one file
@@ -158,6 +158,24 @@ At Sonatype we value the stability and maintainability of the code base while st
 ### AngularJS Development - Directives
 * For directives, we use an element restriction when "creating a component that is in control of its template" and an attribute restriction when "decorating an existing element with new functionality".
   * This is inline with the Angular documentation as seen in ["When should I use an attribute versus an element?"](https://docs.angularjs.org/guide/directive)
+
+* We place dependent controllers and links below the directive function
+```javascript
+  function FooDirective(...) {
+    return {
+      controller: FooController,
+      link: FooLink
+    };
+  }
+
+  FooDirective.$inject = [...];
+
+  function FooController(...) {...}
+
+  FooController.$inject = [...];
+
+  function FooLink() {...}
+```
 
 # Jasmine Development
 * Jasmine root describe should share the name of the containing file

@@ -74,7 +74,7 @@ At Sonatype we value the stability and maintainability of the code base while st
   * baz.view.html <-> baz.controller.js
 
 ## AngularJS Development
-* Each Angular Component should exist in it's own file, if it is independent
+* Each Angular Component should exist in it's own file, if it is injectable
   * We value the ability to easily find where code resides
   * We understand that small code files encourages the decomposition of a problem
   * We follow other language practices of encapsolating one object into one file

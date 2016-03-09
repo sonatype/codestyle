@@ -62,7 +62,7 @@ At Sonatype we value the stability and maintainability of the code base while st
 ```javascript
   angular.controller('foo.controller', FooController);
 ```
-* Angular component names, except for directives, should be suffixed by their type
+* Angular component names, except for directives and modules, should be suffixed by their type
   * Appending the component type to its name allows the consumer to easily understand its type and function
   * Directives are not suffixed to prevent the extra HTML markup required to reference them
   * qux.directive.js

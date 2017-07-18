@@ -1,8 +1,9 @@
 #Organize Import Order
 #Tue Jun 11 12:45:09 EDT 2013
-5=\#
-4=
-3=org.sonatype
-2=com.sonatype
+6=\#
+5=
+4=org.sonatype
+3=com.sonatype
+2=javafx
 1=javax
 0=java

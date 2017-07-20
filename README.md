@@ -58,6 +58,7 @@ Order:
 
 * java
 * javax
+* javafx
 * com.sonatype
 * org.sonatype
 * _other_

@@ -40,6 +40,14 @@ Restart IDEA
 See [the eclipse documentation](http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fcodestyle%2Fref-preferences-formatter.htm) for how to import the files into your IDE.
 In addition, html indentation settings are not exported, but can be set to 2 spaces from Preferences -> Web -> HTML Files -> Editor -> "Indent using spaces". [Screenshot of the eclipse config here.](https://s3.amazonaws.com/uploads.hipchat.com/18157/88592/RSkQhq8UYnxf81Z/upload.png)
 
+### Visual Studio
+
+Import sonatype-visualstudio-settings.xml using Tools -> Import and Export Settings...
+
+### Visual Studio ReSharper
+
+Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options... -> Manage... -> Import and Export -> Import from file...
+
 ## Basics
 
 ### General

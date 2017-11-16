@@ -8,7 +8,9 @@ public class Example1
 {
   private static final long serialVersionUID = 4946535894651225728L;
 
-  public int[] X = new int[]{1, 3, 5, 7, 9, 11};
+  public int[] x = new int[]{1, 3, 5, 7, 9, 11};
+
+  public static final int[] X = new int[]{1, 3, 5, 7, 9, 11};
 
   public Example1(boolean a, int x, int y, int z) throws IOException {
   }
@@ -81,7 +83,7 @@ public class Example1
   }
 
   private class InnerClass
-      implements I1, I2
+    implements I1, I2
   {
     public void bar() throws E1, E2 {
     }

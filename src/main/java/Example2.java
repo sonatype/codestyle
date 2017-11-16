@@ -2,7 +2,7 @@
 @SuppressWarnings({"ALL"})
 public class Example2<T, U>
 {
-  int[] X = new int[]{1, 3, 5, 6, 7, 87, 1213, 2};
+  int[] x = new int[]{1, 3, 5, 6, 7, 87, 1213, 2};
 
   public void foo(int x, int y) {
     Runnable r = () -> {
@@ -21,12 +21,17 @@ public class Example2<T, U>
         else {
           synchronized (this) {
             switch (e.getCode()) {
-              //...
+              case 0:
+                doCase0();
+                break;
+              default:
+                doDefault();
             }
           }
         }
       }
       catch (MyException e) {
+        processException(e.getMessage(), x + y, z, a);
       }
       finally {
         int[] arr = (int[]) g(y);
@@ -42,5 +47,3 @@ public class Example2<T, U>
     }
   }
 }
-
-class Example2a {}

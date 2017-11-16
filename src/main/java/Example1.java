@@ -79,7 +79,7 @@ public class Example1
                               MyOtherReallyLongClassName bar,
                               MyOtherOtherReallyLongClassName zar) throws IOException
   {
-    //do stuff
+    // do stuff
   }
 
   private class InnerClass

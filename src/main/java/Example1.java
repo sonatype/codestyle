@@ -21,7 +21,7 @@ public class Example1
                   MyOtherOtherReallyLongClassName zar) throws IOException
   {
   }
-  
+
   public void foo(boolean a, int x, int y, int z) throws IOException {
     label1:
     do {

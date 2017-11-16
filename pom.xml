@@ -45,7 +45,6 @@
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <!-- 6.19 is the latest checkstyle version compatible with the maven checkstyle plugin -->
             <version>8.4</version>
           </dependency>
         </dependencies>

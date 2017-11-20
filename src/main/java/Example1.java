@@ -3,8 +3,8 @@ import java.io.Serializable;
 import java.util.Properties;
 
 public class Example1
-  extends Properties
-  implements Serializable
+    extends Properties
+    implements Serializable
 {
   private static final long serialVersionUID = 4946535894651225728L;
 
@@ -83,9 +83,11 @@ public class Example1
   }
 
   private class InnerClass
-    implements I1, I2
+      implements I1, I2
   {
     public void bar() throws E1, E2 {
     }
   }
 }
+
+class Example2a {}

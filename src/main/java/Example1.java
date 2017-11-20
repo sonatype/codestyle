@@ -89,5 +89,3 @@ public class Example1
     }
   }
 }
-
-class Example2a {}

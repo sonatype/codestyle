@@ -47,3 +47,5 @@ public class Example2<T, U>
     }
   }
 }
+
+class Example2a {}

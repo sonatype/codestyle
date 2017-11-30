@@ -16,6 +16,7 @@
   </parent>
 
   <artifactId>pmd-ruleset</artifactId>
+  <version>1-SNAPSHOT</version>
 
   <name>PMD ruleset</name>
   <description>

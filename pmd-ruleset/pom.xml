@@ -15,11 +15,11 @@
     <relativePath />
   </parent>
 
-  <artifactId>iq-pmd-ruleset</artifactId>
+  <artifactId>pmd-ruleset</artifactId>
 
-  <name>IQ PMD ruleset</name>
+  <name>PMD ruleset</name>
   <description>
-    The main PMD ruleset for the IQ project.  It is contained in a separate maven module so that
-    it can be reliably referenced via the classpath
+    A basic ruleset for the PMD static analysis tool.  Checks for unused variables, fields and imports, and braces
+    around 'if' statements etc
   </description>
 </project>

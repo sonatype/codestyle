@@ -15,6 +15,7 @@
     <relativePath />
   </parent>
 
+  <groupId>com.sonatype</groupId>
   <artifactId>pmd-ruleset</artifactId>
   <version>1-SNAPSHOT</version>
 

@@ -1,0 +1,25 @@
+<!--
+
+    Copyright (c) 2011-present Sonatype, Inc. All rights reserved.
+    Includes the third-party code listed at http://links.sonatype.com/products/clm/attributions.
+    "Sonatype" is a trademark of Sonatype, Inc.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.sonatype.buildsupport</groupId>
+    <artifactId>public-parent</artifactId>
+    <version>10</version>
+    <relativePath />
+  </parent>
+
+  <artifactId>iq-pmd-ruleset</artifactId>
+
+  <name>IQ PMD ruleset</name>
+  <description>
+    The main PMD ruleset for the IQ project.  It is contained in a separate maven module so that
+    it can be reliably referenced via the classpath
+  </description>
+</project>

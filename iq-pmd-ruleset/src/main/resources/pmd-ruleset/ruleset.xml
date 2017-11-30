@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+
+    Copyright (c) 2011-present Sonatype, Inc. All rights reserved.
+    Includes the third-party code listed at http://links.sonatype.com/products/clm/attributions.
+    "Sonatype" is a trademark of Sonatype, Inc.
+
+-->
+<ruleset name="insight-brain ruleset"
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <description>PMD ruleset for insight-brain</description>
+
+  <rule ref="rulesets/java/unusedcode.xml">
+    <!-- This rule appears to be flaky and tends to give false positives involving static methods -->
+    <exclude name="UnusedPrivateMethod"/>
+  </rule>
+  <rule ref="rulesets/java/imports.xml">
+    <exclude name="TooManyStaticImports"/>
+    <exclude name="UnnecessaryFullyQualifiedName"/>
+  </rule>
+  <rule ref="rulesets/java/braces.xml"/>
+</ruleset>

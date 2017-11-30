@@ -9,9 +9,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.sonatype.buildsupport</groupId>
+    <groupId>org.sonatype.buildsupport</groupId>
     <artifactId>public-parent</artifactId>
-    <version>10</version>
+    <version>12</version>
     <relativePath />
   </parent>
 

@@ -31,7 +31,7 @@ public class Example1
           int anotherVariable = a ? x : y;
         }
         else if (x < 0) {
-          int someVariable = (y + z);
+          int someVariable = y + z;
           someVariable = x = x + y;
         }
         else {

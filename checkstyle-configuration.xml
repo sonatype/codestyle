@@ -24,6 +24,7 @@
 
   <module name="TreeWalker">
     <module name="SuppressWarningsHolder" />
+    <module name="UnnecessaryParentheses"/>
     <module name="OuterTypeFilename"/>
     <module name="LineLength">
       <property name="max" value="120"/>

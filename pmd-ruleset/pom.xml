@@ -1,0 +1,27 @@
+<!--
+
+    Copyright (c) 2011-present Sonatype, Inc. All rights reserved.
+    Includes the third-party code listed at http://links.sonatype.com/products/clm/attributions.
+    "Sonatype" is a trademark of Sonatype, Inc.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonatype.buildsupport</groupId>
+    <artifactId>public-parent</artifactId>
+    <version>12</version>
+    <relativePath />
+  </parent>
+
+  <groupId>com.sonatype</groupId>
+  <artifactId>pmd-ruleset</artifactId>
+  <version>1-SNAPSHOT</version>
+
+  <name>PMD ruleset</name>
+  <description>
+    A basic ruleset for the PMD static analysis tool.  Checks for unused variables, fields and imports, and braces
+    around 'if' statements etc
+  </description>
+</project>

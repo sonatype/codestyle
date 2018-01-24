@@ -3,12 +3,14 @@ import java.io.Serializable;
 import java.util.Properties;
 
 public class Example1
-  extends Properties
-  implements Serializable
+    extends Properties
+    implements Serializable
 {
   private static final long serialVersionUID = 4946535894651225728L;
 
-  public int[] X = new int[]{1, 3, 5, 7, 9, 11};
+  public int[] x = new int[]{1, 3, 5, 7, 9, 11};
+
+  public static final int[] X = new int[]{1, 3, 5, 7, 9, 11};
 
   public Example1(boolean a, int x, int y, int z) throws IOException {
   }
@@ -19,7 +21,7 @@ public class Example1
                   MyOtherOtherReallyLongClassName zar) throws IOException
   {
   }
-  
+
   public void foo(boolean a, int x, int y, int z) throws IOException {
     label1:
     do {
@@ -29,7 +31,7 @@ public class Example1
           int anotherVariable = a ? x : y;
         }
         else if (x < 0) {
-          int someVariable = (y + z);
+          int someVariable = y + z;
           someVariable = x = x + y;
         }
         else {
@@ -77,7 +79,7 @@ public class Example1
                               MyOtherReallyLongClassName bar,
                               MyOtherOtherReallyLongClassName zar) throws IOException
   {
-    //do stuff
+    // do stuff
   }
 
   private class InnerClass

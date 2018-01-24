@@ -1,6 +1,3 @@
-import java.lang.Byte;
-import java.lang.NumberFormatException;
-
 import javax.crypto.NullCipher;
 
 import static java.lang.Math.min;
@@ -15,6 +12,7 @@ public class Imports
       new Byte("hello world");
     }
     catch (NumberFormatException e) {
+      handleError(e);
     }
 
     min(1, 2);

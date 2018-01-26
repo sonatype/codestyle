@@ -3,21 +3,20 @@
  * Includes the third-party code listed at http://links.sonatype.com/products/clm/attributions.
  * "Sonatype" is a trademark of Sonatype, Inc.
  */
-
 package com.sonatype.checks;
 
 import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 
-public class ClassStructureBlankLineCheck
+public class ClassStructureEmptyLineCheck
     extends AbstractCheck
 {
   static final String TRAILING_EMPTY_MESSAGE =
-      "Left curly brace as part of a class or interface definition should not be followed by any blank lines.";
+      "Empty lines not allowed after left curly in class or interface definition.";
 
   static final String PRECEDING_EMPTY_MESSAGE =
-      "Right curly at the end of the class or interface definition should not be preceded by any blank lines.";
+      "Empty lines not allowed before right curly at end of class or interface definition.";
 
   @Override
   public int[] getDefaultTokens() {

@@ -3,7 +3,6 @@
  * Includes the third-party code listed at http://links.sonatype.com/products/clm/attributions.
  * "Sonatype" is a trademark of Sonatype, Inc.
  */
-
 package com.sonatype.checks;
 
 import java.io.File;
@@ -15,20 +14,20 @@ import com.puppycrawl.tools.checkstyle.api.LocalizedMessage;
 import com.puppycrawl.tools.checkstyle.api.LocalizedMessages;
 import org.junit.Test;
 
-import static com.sonatype.checks.ClassStructureBlankLineCheck.PRECEDING_EMPTY_MESSAGE;
-import static com.sonatype.checks.ClassStructureBlankLineCheck.TRAILING_EMPTY_MESSAGE;
+import static com.sonatype.checks.ClassStructureEmptyLineCheck.PRECEDING_EMPTY_MESSAGE;
+import static com.sonatype.checks.ClassStructureEmptyLineCheck.TRAILING_EMPTY_MESSAGE;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.core.IsNull.nullValue;
 
-public class ClassStructureBlankLineCheckTest
+public class ClassStructureEmptyLineCheckTest
     extends AbstractCheckTest
 {
-  private File baseDir = new File("src/test/resources/ClassStructureBlankLineCheckTest");
+  private File baseDir = new File("src/test/resources/ClassStructureEmptyLineCheckTest");
 
-  private ClassStructureBlankLineCheck check = new ClassStructureBlankLineCheck();
+  private ClassStructureEmptyLineCheck check = new ClassStructureEmptyLineCheck();
 
   @Test
   public void testVisitToken_GoodSourceFiles() throws Exception {

@@ -77,7 +77,6 @@ public class ClassStructureEmptyLineCheckTest
     File sourceFile = new File(baseDir, fileName);
     LocalizedMessages messages = processFile(sourceFile, check);
 
-    assertThat(messages, is(not(nullValue())));
     assertThat(messages.getMessages().isEmpty(), is(false));
     assertThat(messages.getMessages().size(), is(1));
     assertThat(messages.getMessages().first().getMessage(), is(expectedMessage));
@@ -87,7 +86,6 @@ public class ClassStructureEmptyLineCheckTest
     File sourceFile = new File(baseDir, fileName);
     LocalizedMessages messages = processFile(sourceFile, check);
 
-    assertThat(messages, is(not(nullValue())));
     assertThat(messages.getMessages().isEmpty(), is(false));
     assertThat(messages.getMessages().size(), is(2));
 

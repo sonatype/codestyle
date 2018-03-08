@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.crypto.NullCipher;
 
 import static java.lang.Math.min;
@@ -5,7 +8,7 @@ import static java.lang.Math.min;
 public class Imports
 {
   public Imports() {
-
+    List list = new ArrayList();
     new NullCipher();
 
     try {

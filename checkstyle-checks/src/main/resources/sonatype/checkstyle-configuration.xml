@@ -38,9 +38,6 @@
       <property name="ignorePattern" value="^ \*.*"/>
     </module>
     <module name="UnusedImports"/>
-    <module name="AvoidStarImport">
-      <property name="severity" value="warning"/>
-    </module>
     <module name="NoLineWrap"/>
     <module name="EmptyBlock">
       <property name="option" value="TEXT"/>

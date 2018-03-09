@@ -13,14 +13,27 @@
     Project here is only to simplify importing reference examples into target IDE.
   </description>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.0.0</version>
+        <dependencies>
+          <dependency>
+            <groupId>com.sonatype</groupId>
+            <artifactId>checkstyle-checks</artifactId>
+            <version>1-SNAPSHOT</version>
+          </dependency>
+        </dependencies>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <configLocation>sonatype/checkstyle-configuration.xml</configLocation>
         </configuration>
       </plugin>
     </plugins>

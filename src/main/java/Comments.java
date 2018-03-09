@@ -13,7 +13,7 @@
 
 /**
  * Some JavaDoc comment to format.
- * 
+ *
  * @since 0.0
  */
 public class Comments
@@ -25,9 +25,8 @@ public class Comments
   }
 
   public void foo() {
-    Type t = new Type("firstParameter", // this is supposed to be single line, using a lot of text to show off long lines
+    Type t = new Type("firstParameter", // this is supposed to be single line, using lots of text to show off long lines
         "secondParameter", // this is single line
         "thirdParameter");
   }
-
 }

@@ -18,10 +18,6 @@ def call(currentBuild, env) {
       sendEmailNotification(currentBuild, env,
           [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
           'master' == branch ? defaultRecipients : '')
-
-      if ('master' == branch) {
-        hipchatSend room: 'iq-builds', message: "FAILURE: ${currentBuild.fullDisplayName}", color: 'RED', notify: true
-      }
       break
     case 'SUCCESS':
       // previous failure on master
@@ -31,7 +27,6 @@ def call(currentBuild, env) {
         sendEmailNotification(currentBuild, env,
             [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
             defaultRecipients)
-        hipchatSend room: 'iq-builds', message: "SUCCESS: ${currentBuild.fullDisplayName}", color: 'GREEN', notify: true
       }
       else {
         // only notify the person who initiated the build

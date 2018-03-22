@@ -22,7 +22,6 @@ def call(currentBuild, env) {
     case 'SUCCESS':
       // previous failure on master
       if ('master' == branch && currentBuild?.previousBuild?.result =~ /FAILURE|UNSTABLE/) {
-
         // Notify the developers who committed to the failed build, the build initiator, and the build group.
         sendEmailNotification(currentBuild, env,
             [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],

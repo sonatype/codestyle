@@ -9,17 +9,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.sonatype.buildsupport</groupId>
-    <artifactId>public-parent</artifactId>
-    <version>12</version>
-    <relativePath />
+    <groupId>com.sonatype</groupId>
+    <artifactId>codestyle</artifactId>
+    <version>1-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.sonatype</groupId>
   <artifactId>pmd-ruleset</artifactId>
-  <version>1-SNAPSHOT</version>
 
-  <name>PMD ruleset</name>
+  <name>PMD Ruleset</name>
   <description>
     A basic ruleset for the PMD static analysis tool.  Checks for unused variables, fields and imports, and braces
     around 'if' statements etc

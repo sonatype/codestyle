@@ -1,17 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--
 
+    Copyright (c) 2011-present Sonatype, Inc. All rights reserved.
+    Includes the third-party code listed at http://links.sonatype.com/products/clm/attributions.
+    "Sonatype" is a trademark of Sonatype, Inc.
+
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>org.sonatype.buildsupport</groupId>
+    <artifactId>public-parent</artifactId>
+    <version>12</version>
+    <relativePath/>
+  </parent>
+
   <groupId>com.sonatype</groupId>
   <artifactId>codestyle</artifactId>
-  <version>ignore</version>
+  <name>Sonatype Code Style</name>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <description>
-    Project here is only to simplify importing reference examples into target IDE.
+    Parent project for codestyle related projects.
   </description>
+
+  <modules>
+    <module>pmd-ruleset</module>
+    <module>checkstyle-checks</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,11 +48,36 @@
           <dependency>
             <groupId>com.sonatype</groupId>
             <artifactId>checkstyle-checks</artifactId>
-            <version>1-SNAPSHOT</version>
+            <version>${project.version}</version>
           </dependency>
         </dependencies>
         <configuration>
           <configLocation>sonatype/checkstyle-configuration.xml</configLocation>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.mycila</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>2.11</version>
+        <configuration>
+          <excludes>
+            <exclude>**/target/**</exclude>
+            <exclude>**/.*/**</exclude>
+            <exclude>**/dependency-reduced-pom.xml</exclude>
+            <exclude>**/nbactions*.xml</exclude>
+            <exclude>**/nb-configuration.xml</exclude>
+            <exclude>**/atlassian-ide-plugin.xml</exclude>
+            <exclude>**/release.properties</exclude>
+            <exclude>**/META-INF/services/**</exclude>
+            <exclude>sonatype-visualstudio-settings.xml</exclude>
+            <exclude>sonatype-visualstudio-resharper-settings.xml</exclude>
+            <exclude>sonatype-idea.xml</exclude>
+            <exclude>sonatype-javascript-eclipse.xml</exclude>
+            <exclude>sonatype-eclipse.xml</exclude>
+            <exclude>src/main/resources/*.js</exclude>
+            <exclude>src/main/java/*.java</exclude>
+            <exclude>src/main/groovy/*.groovy</exclude>
+          </excludes>
         </configuration>
       </plugin>
     </plugins>

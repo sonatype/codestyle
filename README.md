@@ -33,7 +33,8 @@ Linux: `cp sonatype-idea.xml ~/.IntelliJIdea14/config/codestyles`.
 
 OSX: `cp sonatype-idea.xml ~/Library/Preferences/IntelliJIdea14/codestyles/`
 
-Restart IDEA
+- Restart IDEA
+- Go to _Preferences->Code Style_ and ensure that **Sonatype** is selected as the **Scheme**
 
 ### Eclipse
 

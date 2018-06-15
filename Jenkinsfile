@@ -16,7 +16,7 @@ def settings = [
     excludes: ['**/*-sources.jar*']
   ],
   notificationSender: { currentBuild, env ->
-    notifyChat(currentBuild: currentBuild, env: env, room, 'ops-builds')
+    notifyChat(currentBuild: currentBuild, env: env, room: 'ops-builds')
   }
 ]
 

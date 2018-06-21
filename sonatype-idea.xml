@@ -97,6 +97,10 @@
       </value>
     </option>
   </GroovyCodeStyleSettings>
+  <HCL-Terraform>
+    <option name="PROPERTY_ALIGNMENT" value="2" />
+    <option name="ARRAY_WRAPPING" value="1" />
+  </HCL-Terraform>
   <JSCodeStyleSettings>
     <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
   </JSCodeStyleSettings>
@@ -489,4 +493,3 @@
     </indentOptions>
   </codeStyleSettings>
 </code_scheme>
-

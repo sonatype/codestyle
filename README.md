@@ -18,16 +18,30 @@ supported environments.
 The reference examples should reflect the desired format.  The IDE configurations may not support or respect this, 
 which is okay while we're developing the format and auto-formatters.
 
+# Goals, Intent and Working Agreement
+
+## Goals
+We want to present a unified approach to code styling across our entire suite of development efforts, automating away
+the need to respond to deviations during integration of code from a large group of developers, both within and outside
+of the Sonatype Organization.
+
+## Intent
+All of the development environments used by developers contributing to Sonatype code should be applying the same agreed
+upon formatting rules consistently, so that we don't spend needless time aligning these rules along with the more
+substantial (and important!) logical changes we make on a daily basis.
+
+## Working Agreement
+- Any change to existing rules should be discussed and agreed upon by the larger group before implementation. Minimally
+this should result in a mail to the development group with some minimal time for feedback.
+- Any noted deviation between development environments should result in the scheduling of work to correctly align with 
+agreed upon standard. 
+
+
 ## Installation
 
 ### IntelliJ IDEA
 
-Linux: `cp sonatype-idea.xml ~/.IntelliJIdea14/config/codestyles`.
-
-OSX: `cp sonatype-idea.xml ~/Library/Preferences/IntelliJIdea14/codestyles/`
-
-- Restart IDEA
-- Go to _Preferences->Code Style_ and ensure that **Sonatype** is selected as the **Scheme**
+See [the Intellij documentation](https://www.jetbrains.com/help/idea/copying-code-style-settings.html).
 
 ### Eclipse
 

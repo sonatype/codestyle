@@ -31,7 +31,8 @@ upon formatting rules consistently, so that we don't spend needless time alignin
 substantial (and important!) logical changes we make on a daily basis.
 
 ## Working Agreement
-- Any change to existing rules should be discussed and agreed upon by the larger group before implementation.
+- Any change to existing rules should be discussed and agreed upon by the larger group before implementation. Minimally
+this should result in a mail to the development group with some minimal time for feedback.
 - Any noted deviation between development environments should result in the scheduling of work to correctly align with 
 agreed upon standard. 
 

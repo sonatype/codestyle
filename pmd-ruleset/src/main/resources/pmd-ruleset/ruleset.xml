@@ -27,4 +27,6 @@
 
   <!-- Braces -->
   <rule ref="category/java/codestyle.xml/ControlStatementBraces" />
+  
+  <rule ref="category/java/bestpractices.xml/MissingOverride" />
 </ruleset>

@@ -10,7 +10,7 @@
     xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
-  <description>PMD ruleset originally created for insight-brain</description>
+  <description>PMD ruleset to be used with maven-pmd-plugin 3.9 or newer.</description>
 
   <!-- Unused code -->
   <rule ref="category/java/bestpractices.xml/UnusedImports" />

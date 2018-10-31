@@ -12,6 +12,9 @@ public class Example1
 
   public static final int[] X = new int[]{1, 3, 5, 7, 9, 11};
 
+  public static final MyReallyLongClassName THE_REALLY_LONG_VARIABLE_NAME_FOR_THE_REALLY_LONG_CLASS_NAME =
+      new MyReallyLongClassName("foo");
+
   public Example1(boolean a, int x, int y, int z) throws IOException {
   }
 

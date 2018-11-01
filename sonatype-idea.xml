@@ -184,6 +184,7 @@
     <option name="BLANK_LINES_AROUND_FIELD_IN_INTERFACE" value="1" />
     <option name="BLANK_LINES_BEFORE_PACKAGE" value="0" />
     <option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="false" />
+    <option name="BRACE_STYLE" value="5" />
     <option name="CALL_PARAMETERS_WRAP" value="1" />
     <option name="CATCH_ON_NEW_LINE" value="true" />
     <option name="CLASS_BRACE_STYLE" value="2" />

@@ -11,7 +11,7 @@
   <parent>
     <groupId>com.sonatype</groupId>
     <artifactId>codestyle</artifactId>
-    <version>6</version>
+    <version>7-SNAPSHOT</version>
   </parent>
 
   <artifactId>pmd-ruleset</artifactId>

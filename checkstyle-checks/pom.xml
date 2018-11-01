@@ -11,7 +11,7 @@
   <parent>
     <groupId>com.sonatype</groupId>
     <artifactId>codestyle</artifactId>
-    <version>5</version>
+    <version>6-SNAPSHOT</version>
   </parent>
 
   <artifactId>checkstyle-checks</artifactId>

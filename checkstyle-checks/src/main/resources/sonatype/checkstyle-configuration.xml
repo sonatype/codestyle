@@ -45,11 +45,11 @@
     </module>
     <module name="LeftCurly">
       <property name="option" value="nlow"/>
-      <property name="tokens" value="ANNOTATION_DEF, CTOR_DEF, METHOD_DEF, LITERAL_WHILE, LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_SYNCHRONIZED, LITERAL_SWITCH, LITERAL_DO, LITERAL_IF, LITERAL_ELSE, LITERAL_FOR, STATIC_INIT, OBJBLOCK"/>
+      <property name="tokens" value="CTOR_DEF, METHOD_DEF, LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_SYNCHRONIZED, LITERAL_SWITCH, LITERAL_DO, STATIC_INIT, OBJBLOCK"/>
     </module>
     <module name="LeftCurly">
       <property name="option" value="nl"/>
-      <property name="tokens" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, ENUM_CONSTANT_DEF"/>
+      <property name="tokens" value="ANNOTATION_DEF, CLASS_DEF, INTERFACE_DEF, ENUM_DEF, ENUM_CONSTANT_DEF"/>
     </module>
     <module name="RightCurly">
       <property name="option" value="alone"/>
@@ -148,9 +148,6 @@
       <property name="allowSamelineMultipleAnnotations" value="true"/>
     </module>
     <module name="NonEmptyAtclauseDescription"/>
-    <module name="JavadocTagContinuationIndentation">
-      <property name="offset" value="2"/>
-    </module>
     <module name="AtclauseOrder">
       <property name="tagOrder" value="@param, @return, @throws, @deprecated"/>
       <property name="target" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>

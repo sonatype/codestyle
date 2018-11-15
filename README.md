@@ -1,15 +1,8 @@
 <!--
 
-    Sonatype Nexus (TM) Open Source Version
-    Copyright (c) 2007-2013 Sonatype, Inc.
-    All rights reserved. Includes the third-party code listed at http://links.sonatype.com/products/nexus/oss/attributions.
-
-    This program and the accompanying materials are made available under the terms of the Eclipse Public License Version 1.0,
-    which accompanies this distribution and is available at http://www.eclipse.org/legal/epl-v10.html.
-
-    Sonatype Nexus (TM) Professional Version is available from Sonatype, Inc. "Sonatype" and "Sonatype Nexus" are trademarks
-    of Sonatype, Inc. Apache Maven is a trademark of the Apache Software Foundation. M2eclipse is a trademark of the
-    Eclipse Foundation. All other trademarks are the property of their respective owners.
+    Copyright (c) 2011-present Sonatype, Inc. All rights reserved.
+    Includes the third-party code listed at http://links.sonatype.com/products/clm/attributions.
+    "Sonatype" is a trademark of Sonatype, Inc.
 
 -->
 # Sonatype Codestyle
@@ -25,15 +18,30 @@ supported environments.
 The reference examples should reflect the desired format.  The IDE configurations may not support or respect this, 
 which is okay while we're developing the format and auto-formatters.
 
+# Goals, Intent and Working Agreement
+
+## Goals
+We want to present a unified approach to code styling across our entire suite of development efforts, automating away
+the need to respond to deviations during integration of code from a large group of developers, both within and outside
+of the Sonatype Organization.
+
+## Intent
+All of the development environments used by developers contributing to Sonatype code should be applying the same agreed
+upon formatting rules consistently, so that we don't spend needless time aligning these rules along with the more
+substantial (and important!) logical changes we make on a daily basis.
+
+## Working Agreement
+- Any change to existing rules should be discussed and agreed upon by the larger group before implementation. Minimally
+this should result in a mail to the development group with some minimal time for feedback.
+- Any noted deviation between development environments should result in the scheduling of work to correctly align with 
+agreed upon standard. 
+
+
 ## Installation
 
 ### IntelliJ IDEA
 
-Linux: `cp sonatype-idea.xml ~/.IntelliJIdea14/config/codestyles`.
-
-OSX: `cp sonatype-idea.xml ~/Library/Preferences/IntelliJIdea14/codestyles/`
-
-Restart IDEA
+See [the Intellij documentation](https://www.jetbrains.com/help/idea/copying-code-style-settings.html).
 
 ### Eclipse
 

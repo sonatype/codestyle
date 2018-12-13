@@ -147,7 +147,6 @@
       <property name="tokens" value="VARIABLE_DEF"/>
       <property name="allowSamelineMultipleAnnotations" value="true"/>
     </module>
-    <module name="NonEmptyAtclauseDescription"/>
     <module name="JavadocMethod">
       <property name="scope" value="public"/>
       <property name="allowMissingParamTags" value="true"/>
@@ -161,9 +160,6 @@
       <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>
       <message key="name.invalidPattern"
                value="Method name ''{0}'' must match pattern ''{1}''."/>
-    </module>
-    <module name="SingleLineJavadoc">
-      <property name="ignoreInlineTags" value="false"/>
     </module>
     <module name="EmptyCatchBlock">
       <property name="exceptionVariableName" value="expected"/>

@@ -6,7 +6,7 @@
 @Library(['private-pipeline-library', 'jenkins-shared']) _
 
 def settings = [
-  javaVersion: 'Java 7',
+  javaVersion: 'Java 8',
   mavenVersion: 'Maven 3.2.x',
   usePublicSettingsXmlFile:false,
   useEventSpy: false,

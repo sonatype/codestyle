@@ -20,7 +20,7 @@
   <groupId>com.sonatype</groupId>
   <artifactId>codestyle</artifactId>
   <name>Sonatype Code Style</name>
-  <version>10-java7</version>
+  <version>11-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <description>

@@ -11,7 +11,7 @@
   <parent>
     <groupId>com.sonatype</groupId>
     <artifactId>codestyle</artifactId>
-    <version>10-java7</version>
+    <version>11-SNAPSHOT</version>
   </parent>
 
   <artifactId>checkstyle-checks</artifactId>

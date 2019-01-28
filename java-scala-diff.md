@@ -112,7 +112,7 @@ class Foo {
   def bar_=(bar: Int) { ... }
 }
 
-// if getter/setter are backed by a field, underscore prefix to disambiguate
+// in rare cases when it’s necessary to back getter/setter by a field, underscore prefix to disambiguate
 class Foo {
   private var _bar = -1
 }
@@ -146,14 +146,14 @@ tuples.filter { case (s1, s2) => s1 == s2 }
 ```
 ```java
 // in Java, opening brace may be on next line
-void foo()
+class Foo
 {
   ...
 }
 ```
 ```scala
 // in Scala, opening brace on same line, otherwise compiler might infer semicolon unexpectedly
-def foo(): Unit = {
+class Foo {
   ...
 }
 ```
@@ -161,7 +161,8 @@ def foo(): Unit = {
 // in Java, always use with if/else/for/do/while
 if (foo) {
   doSomething();
-} else {
+}
+else {
   doSomethingElse();
 }
 ```
@@ -263,7 +264,7 @@ void doSomething() {
 }
 ```
 ```scala
-// Scaladoc with asterisks in second column
+// Scaladoc with asterisks in either second column
 
 /** Does something.
  *
@@ -273,7 +274,7 @@ def doSomething(): Unit = {
   ...
 }
 
-// Scaladoc with asterisks in third column
+// or third
 
 /** Does something.
   *

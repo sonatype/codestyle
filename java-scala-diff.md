@@ -232,7 +232,7 @@ In Java, “some logical order”. In Scala, fields before methods.
 @Partial @Mock DataLoader loader;
 ```
 ```scala
-// in Scala, each annotatin on its own line
+// in Scala, each annotation on its own line
 @transaction
 @throws(classOf[IOException])
 override protected final def foo(): Unit = {
@@ -264,17 +264,7 @@ void doSomething() {
 }
 ```
 ```scala
-// Scaladoc with asterisks in either second column
-
-/** Does something.
- *
- *  Some more details.
- */
-def doSomething(): Unit = {
-  ...
-}
-
-// or third
+// Scaladoc, asterisks in third column by IntelliJ IDEA’s default
 
 /** Does something.
   *

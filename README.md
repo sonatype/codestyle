@@ -115,3 +115,8 @@ Follows "[Google Javascript Style Guide][javascript style page]" with 2 space in
 
 [java style pdf]:  http://its.lnpu.edu.ua/edocs1/new_doc/en/Vermeulen%20A.The%20elements%20of%20Java%20style.2001.pdf
 [javascript style page]: https://google.github.io/styleguide/javascriptguide.xml
+
+## Scala
+
+Follow [docs.scala-lang.org/style](https://docs.scala-lang.org/style/).
+See some [differences](java-scala-diff.md) from Java.

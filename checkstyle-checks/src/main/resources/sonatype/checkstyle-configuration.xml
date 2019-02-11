@@ -44,8 +44,12 @@
       <property name="tokens" value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE, LITERAL_SWITCH"/>
     </module>
     <module name="LeftCurly">
+      <property name="option" value="eol"/>
+      <property name="tokens" value="LITERAL_TRY"/>
+    </module>
+    <module name="LeftCurly">
       <property name="option" value="nlow"/>
-      <property name="tokens" value="CTOR_DEF, METHOD_DEF, LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_SYNCHRONIZED, LITERAL_SWITCH, LITERAL_DO, STATIC_INIT, OBJBLOCK"/>
+      <property name="tokens" value="CTOR_DEF, METHOD_DEF, LITERAL_CATCH, LITERAL_FINALLY, LITERAL_SYNCHRONIZED, LITERAL_SWITCH, LITERAL_DO, STATIC_INIT, OBJBLOCK"/>
     </module>
     <module name="LeftCurly">
       <property name="option" value="nl"/>

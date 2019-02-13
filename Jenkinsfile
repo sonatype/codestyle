@@ -6,6 +6,7 @@
 @Library(['private-pipeline-library', 'jenkins-shared']) _
 
 def settings = [
+  javaVersion: 'Java 8',
   mavenVersion: 'Maven 3.2.x',
   usePublicSettingsXmlFile: false,
   useEventSpy: false,
@@ -20,10 +21,6 @@ def settings = [
 ]
 
 if (params) {
-  settings.javaVersion = params.javaVersion ?: 'Java 8'
-  if (settings.javaVersion == 'Java 7') {
-    settings.mavenOptions = '-Dmaven.compiler.source=1.7 -Dmaven.compiler.target=1.7'
-  }
   mavenReleasePipeline(settings)
 } else {
   mavenSnapshotPipeline(settings)

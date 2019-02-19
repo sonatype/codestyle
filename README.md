@@ -18,6 +18,9 @@ supported environments.
 The reference examples should reflect the desired format.  The IDE configurations may not support or respect this, 
 which is okay while we're developing the format and auto-formatters.
 
+Also contains a set of [checkstyle](https://github.com/checkstyle/checkstyle) and [pmd](https://pmd.github.io/) rules that can be used to enforce code formatting/quality standards as part of the build.
+Usage/release documentation [here](#checkstyle-and-pmd-rules).
+
 # Goals, Intent and Working Agreement
 
 ## Goals
@@ -120,3 +123,72 @@ Follows "[Google Javascript Style Guide][javascript style page]" with 2 space in
 
 Follow [docs.scala-lang.org/style](https://docs.scala-lang.org/style/).
 See some [differences](java-scala-diff.md) from Java.
+
+
+# Checkstyle and PMD rules
+
+## Releasing
+After merging changes to the Checkstyle or PMD rulesets, a master snapshot build will run [here](https://jenkins.zion.aws.s/job/cdi/job/tools/job/codestyle/job/master-snapshot/).
+Ensure that passes, then run the release job [here](https://jenkins.zion.aws.s/job/cdi/job/tools/job/codestyle/job/release/).
+After building a new release, update any builds to use new rule versions as appropriate
+
+## Usage
+
+### Maven Sample
+Checkstyle
+```
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <consoleOutput>true</consoleOutput>
+          <configLocation>sonatype/checkstyle-configuration.xml</configLocation>
+          <includeTestSourceDirectory>true</includeTestSourceDirectory>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>com.sonatype</groupId>
+            <artifactId>checkstyle-checks</artifactId>
+            <version>8</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+```
+
+PMD
+```
+      <plugin>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.10.0</version>
+        <configuration>
+          <linkXRef>false</linkXRef>
+          <printFailingErrors>true</printFailingErrors>
+          <includeTests>true</includeTests>
+          <rulesets>
+            <ruleset>pmd-ruleset/ruleset.xml</ruleset>
+          </rulesets>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>com.sonatype</groupId>
+            <artifactId>pmd-ruleset</artifactId>
+            <version>3</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+```

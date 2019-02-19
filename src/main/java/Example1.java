@@ -18,10 +18,11 @@ public class Example1
   public Example1(boolean a, int x, int y, int z) throws IOException {
   }
 
-  public Example1(MyReallyLongClassName foo,
-                  MyOtherReallyLongClassName bar,
-                  MyOtherOtherReallyLongClassName car,
-                  MyOtherOtherReallyLongClassName zar) throws IOException
+  public Example1(
+      MyReallyLongClassName foo,
+      MyOtherReallyLongClassName bar,
+      MyOtherOtherReallyLongClassName car,
+      MyOtherOtherReallyLongClassName zar) throws IOException
   {
   }
 
@@ -78,9 +79,10 @@ public class Example1
     }
   }
 
-  public void multiLineMethod(MyReallyLongClassName foo,
-                              MyOtherReallyLongClassName bar,
-                              MyOtherOtherReallyLongClassName zar) throws IOException
+  public void multiLineMethod(
+      MyReallyLongClassName foo,
+      MyOtherReallyLongClassName bar,
+      MyOtherOtherReallyLongClassName zar) throws IOException
   {
     // do stuff
   }

@@ -5,95 +5,72 @@
  */
 package com.sonatype.checks;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import com.puppycrawl.tools.checkstyle.api.LocalizedMessage;
-import com.puppycrawl.tools.checkstyle.api.LocalizedMessages;
+import com.puppycrawl.tools.checkstyle.AbstractModuleTestSupport;
+import com.puppycrawl.tools.checkstyle.DefaultConfiguration;
 import org.junit.Test;
 
 import static com.sonatype.checks.ClassStructureEmptyLineCheck.PRECEDING_EMPTY_MESSAGE;
 import static com.sonatype.checks.ClassStructureEmptyLineCheck.TRAILING_EMPTY_MESSAGE;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.hamcrest.core.IsNull.nullValue;
 
 public class ClassStructureEmptyLineCheckTest
-    extends AbstractCheckTest
+    extends AbstractModuleTestSupport
 {
-  private File baseDir = new File("src/test/resources/ClassStructureEmptyLineCheckTest");
+  private static final String[] EMPTY_MESSAGES = new String[]{};
 
-  private ClassStructureEmptyLineCheck check = new ClassStructureEmptyLineCheck();
+  @Override
+  protected String getPackageLocation() {
+    return "ClassStructureEmptyLineCheckTest";
+  }
 
   @Test
   public void testVisitToken_GoodSourceFiles() throws Exception {
-    assertNoMessages("goodClassSource.java");
-    assertNoMessages("goodInterfaceSource.java");
-    assertNoMessages("goodButEmptyClassSource.java");
-    assertNoMessages("goodMultipleClassSource.java");
+    verifyNoMessages("goodClassSource.java");
+    verifyNoMessages("goodInterfaceSource.java");
+    verifyNoMessages("goodButEmptyClassSource.java");
+    verifyNoMessages("goodMultipleClassSource.java");
   }
 
   @Test
   public void testVisitToken_trailingEmptyLines() throws Exception {
-    assertOneMessage("trailingEmptyLineClassSource.java", TRAILING_EMPTY_MESSAGE);
-    assertOneMessage("trailingEmptyLinesClassSource.java", TRAILING_EMPTY_MESSAGE);
-    assertOneMessage("trailingEmptyLineInterfaceSource.java", TRAILING_EMPTY_MESSAGE);
-    assertOneMessage("trailingEmptyLinesInterfaceSource.java", TRAILING_EMPTY_MESSAGE);
+    verifyMessages("trailingEmptyLineClassSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE));
+    verifyMessages("trailingEmptyLinesClassSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE));
+    verifyMessages("trailingEmptyLineInterfaceSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE));
+    verifyMessages("trailingEmptyLinesInterfaceSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE));
   }
 
   @Test
   public void testVisitToken_precedingEmptyLines() throws Exception {
-    assertOneMessage("precedingEmptyLineClassSource.java", PRECEDING_EMPTY_MESSAGE);
-    assertOneMessage("precedingEmptyLinesClassSource.java", PRECEDING_EMPTY_MESSAGE);
-    assertOneMessage("precedingEmptyLineInterfaceSource.java", PRECEDING_EMPTY_MESSAGE);
-    assertOneMessage("precedingEmptyLinesInterfaceSource.java", PRECEDING_EMPTY_MESSAGE);
+    verifyMessages("precedingEmptyLineClassSource.java", lineMessage(16, PRECEDING_EMPTY_MESSAGE));
+    verifyMessages("precedingEmptyLinesClassSource.java", lineMessage(20, PRECEDING_EMPTY_MESSAGE));
+    verifyMessages("precedingEmptyLineInterfaceSource.java", lineMessage(16, PRECEDING_EMPTY_MESSAGE));
+    verifyMessages("precedingEmptyLinesInterfaceSource.java", lineMessage(18, PRECEDING_EMPTY_MESSAGE));
   }
 
   @Test
   public void testVisitToken_trailingAndPrecedingEmptyLines() throws Exception {
-    List<String> expectedMessages = Arrays.asList(
-        PRECEDING_EMPTY_MESSAGE, TRAILING_EMPTY_MESSAGE
-    );
-
-    assertTwoMessages("bothEmptyLineClassSource.java", expectedMessages);
-    assertTwoMessages("bothEmptyLinesClassSource.java", expectedMessages);
-    assertTwoMessages("bothEmptyLineInterfaceSource.java", expectedMessages);
-    assertTwoMessages("bothEmptyLinesInterfaceSource.java", expectedMessages);
-    assertTwoMessages("bothEmptyMinimalClassSource.java", expectedMessages);
+    verifyMessages("bothEmptyLineClassSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE),
+        lineMessage(17, PRECEDING_EMPTY_MESSAGE));
+    verifyMessages("bothEmptyLinesClassSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE),
+        lineMessage(23, PRECEDING_EMPTY_MESSAGE));
+    verifyMessages("bothEmptyLineInterfaceSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE),
+        lineMessage(17, PRECEDING_EMPTY_MESSAGE));
+    verifyMessages("bothEmptyLinesInterfaceSource.java", lineMessage(11, TRAILING_EMPTY_MESSAGE),
+        lineMessage(22, PRECEDING_EMPTY_MESSAGE));
+    verifyMessages("bothEmptyMinimalClassSource.java", lineMessage(10, TRAILING_EMPTY_MESSAGE),
+        lineMessage(12, PRECEDING_EMPTY_MESSAGE));
   }
 
-  private void assertNoMessages(String fileName) throws Exception {
-    File sourceFile = new File(baseDir, fileName);
-    LocalizedMessages messages = processFile(sourceFile, check);
-    assertThat(messages, is(not(nullValue())));
-    assertThat(messages.getMessages().isEmpty(), is(true));
+  private String lineMessage(int lineNumber, String message) {
+    return lineNumber + ": " + message;
   }
 
-  private void assertOneMessage(String fileName, String expectedMessage) throws Exception {
-    File sourceFile = new File(baseDir, fileName);
-    LocalizedMessages messages = processFile(sourceFile, check);
-
-    assertThat(messages.getMessages().isEmpty(), is(false));
-    assertThat(messages.getMessages().size(), is(1));
-    assertThat(messages.getMessages().first().getMessage(), is(expectedMessage));
+  private void verifyNoMessages(String fileName) throws Exception {
+    verifyMessages(fileName, EMPTY_MESSAGES);
   }
 
-  private void assertTwoMessages(String fileName, List<String> expectedMessages) throws Exception {
-    File sourceFile = new File(baseDir, fileName);
-    LocalizedMessages messages = processFile(sourceFile, check);
-
-    assertThat(messages.getMessages().isEmpty(), is(false));
-    assertThat(messages.getMessages().size(), is(2));
-
-    List<String> receivedMessages = new ArrayList<>();
-    for (LocalizedMessage message : messages.getMessages()) {
-      receivedMessages.add(message.getMessage());
-    }
-
-    assertThat(receivedMessages, containsInAnyOrder(expectedMessages.toArray()));
+  private void verifyMessages(String fileName, String... messages) throws Exception {
+    DefaultConfiguration checkConfig = createModuleConfig(ClassStructureEmptyLineCheck.class);
+    verify(checkConfig, getPath(fileName), messages);
+    getStream().reset();
   }
 }

@@ -20,7 +20,6 @@
   <groupId>com.sonatype</groupId>
   <artifactId>codestyle</artifactId>
   <name>Sonatype Code Style</name>
-  <version>12-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <description>

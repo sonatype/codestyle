@@ -67,9 +67,13 @@ Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options..
 
 2 space indent for **ALL** formats
 
-**NO TABS**
+### Always Newline at end of file
 
-Newline at end of file
+#### IntelliJ IDEA
+
+Preferences -&gt; Editor -&gt; General \[ Other: Ensure line feed at file end on Save \]
+
+### NO TABS
 
 ### Imports
 

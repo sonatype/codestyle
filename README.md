@@ -63,7 +63,7 @@ Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options..
 
 ### General
 
-120 column right margin
+160 column right margin
 
 2 space indent for **ALL** formats
 

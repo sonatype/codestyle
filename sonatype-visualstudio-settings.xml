@@ -2461,7 +2461,7 @@
         <PropertyValue name="KeepFirstAttributeOnSameLine">True</PropertyValue>
         <PropertyValue name="MaximizeXamlEditor">False</PropertyValue>
         <PropertyValue name="QuoteStyle">DoubleQuote</PropertyValue>
-        <PropertyValue name="WrapColumn">120</PropertyValue>
+        <PropertyValue name="WrapColumn">160</PropertyValue>
         <PropertyValue name="WrapTags">False</PropertyValue>
     </Category>
     <Category RegisteredName="XAML_General" name="XAML_General" PackageName="XamlDesignerPackage" Package="{512be089-83ec-4cc6-8483-cf16565ae209}" Category="{6c8354c1-fac8-41b7-86dd-d4015488bd81}">

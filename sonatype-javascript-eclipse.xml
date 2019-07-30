@@ -183,7 +183,7 @@
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_new_line_before_closing_brace_in_array_initializer" value="do not insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.indent_body_declarations_compare_to_enum_constant_header" value="true"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_closing_paren_in_cast" value="do not insert"/>
-<setting id="org.eclipse.wst.jsdt.core.formatter.lineSplit" value="120"/>
+<setting id="org.eclipse.wst.jsdt.core.formatter.lineSplit" value="160"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_closing_paren_in_enum_constant" value="do not insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.comment.format_html" value="true"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_postfix_operator" value="do not insert"/>
@@ -229,7 +229,7 @@
 <setting id="org.eclipse.wst.jsdt.core.formatter.comment.insert_new_line_for_parameter" value="insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.brace_position_for_type_declaration" value="end_of_line"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_before_colon_in_object_initializer" value="do not insert"/>
-<setting id="org.eclipse.wst.jsdt.core.formatter.comment.line_length" value="120"/>
+<setting id="org.eclipse.wst.jsdt.core.formatter.comment.line_length" value="160"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.insert_space_after_comma_in_method_declaration_throws" value="insert"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.alignment_for_parameters_in_method_declaration" value="16"/>
 <setting id="org.eclipse.wst.jsdt.core.formatter.brace_position_for_block" value="end_of_line"/>

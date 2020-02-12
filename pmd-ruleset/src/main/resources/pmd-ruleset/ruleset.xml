@@ -29,4 +29,7 @@
   <rule ref="category/java/codestyle.xml/ControlStatementBraces" />
   
   <rule ref="category/java/bestpractices.xml/MissingOverride" />
+  
+  <rule ref="category/java/errorprone.xml/DoNotThrowExceptionInFinally" />
+  <rule ref="category/java/errorprone.xml/ReturnFromFinallyBlock" />
 </ruleset>

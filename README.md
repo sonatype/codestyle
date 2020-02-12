@@ -132,8 +132,8 @@ See some [differences](java-scala-diff.md) from Java.
 # Checkstyle and PMD rules
 
 ## Releasing
-After merging changes to the Checkstyle or PMD rulesets, a master snapshot build will run [here](https://jenkins.zion.aws.s/job/cdi/job/tools/job/codestyle/job/master-snapshot/).
-Ensure that passes, then run the release job [here](https://jenkins.zion.aws.s/job/cdi/job/tools/job/codestyle/job/release/).
+After merging changes to the Checkstyle or PMD rulesets, a master snapshot build will run [here]( https://jenkins.ci.sonatype.dev/job/cdi/job/tools/job/codestyle/job/master-snapshot/ ).
+Ensure that passes, then run the release job [here]( https://jenkins.ci.sonatype.dev/job/cdi/job/tools/job/codestyle/job/release/ ).
 After building a new release, update any builds to use new rule versions as appropriate
 
 ## Usage

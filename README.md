@@ -62,8 +62,15 @@ Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options..
 
 ### VSCode
 
+VSCode uses Eclipse formatter settings. To import them clone this repository locally and use path to it in the settings.
+
 - Install Java Extension Pack
-- Set the following settings:
+- Configure Java formatter to use Eclipse settings. You need to specify the name of the profile as well (Sonatype).
+- Disable indentation guessing and set to to be forced to 2.
+- Change import order and star thresholds
+- Disable [online services](https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-telemetry-reporting) such as telemetry and natural language search.
+
+All settings required as a JSON snippet (make sure to fix the local path):
 ```
 "java.format.settings.url": "/path/to/local/codestyle/sonatype-eclipse.xml",
 "java.format.settings.profile": "Sonatype",
@@ -80,10 +87,17 @@ Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options..
   "org.sonatype",
   "",
   "#"
-]
+],
+"files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+},
+"workbench.enableExperiments": false,
+"telemetry.enableTelemetry": false,
+"workbench.settings.enableNaturalLanguageSearch": false
 ```
-- Disable most online services in the settings (`@tag:usesOnlineServices`)
-
 
 ## Basics
 

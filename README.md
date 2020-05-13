@@ -59,6 +59,31 @@ Import sonatype-visualstudio-settings.xml using Tools -> Import and Export Setti
 
 Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options... -> Manage... -> Import and Export -> Import from file...
 
+### VSCode
+
+- Install Java Extenstion Pack
+- Set the following settings:
+```
+"java.format.settings.url": "/path/to/local/codestyle/sonatype-eclipse.xml",
+"java.format.settings.profile": "Sonatype",
+"editor.detectIndentation": false,
+"editor.tabSize": 2,
+"java.sources.organizeImports.starThreshold": 100,
+"java.sources.organizeImports.staticStarThreshold": 10,
+"java.completion.importOrder": [
+
+  "java",
+  "javax",
+  "javafx",
+  "com.sonatype",
+  "org.sonatype",
+  "",
+  "#"
+]
+```
+- Disable most online services in the settings (`@tag:usesOnlineServices`)
+
+
 ## Basics
 
 ### General

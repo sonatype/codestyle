@@ -11,6 +11,7 @@ Contains codestyle configuration for:
 
 * IDEA
 * Eclipse
+* VSCode
 
 And some reference examples (which won't compile so don't even try) to help refine the style properly in
 supported environments.

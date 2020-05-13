@@ -62,41 +62,44 @@ Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options..
 
 ### VSCode
 
+See [the VSCode  documentation](https://code.visualstudio.com/docs/getstarted/settings).
+
 VSCode uses Eclipse formatter settings. To import them clone this repository locally and use path to it in the settings.
 
 - Install Java Extension Pack
 - Configure Java formatter to use Eclipse settings. You need to specify the name of the profile as well (Sonatype).
 - Disable indentation guessing and set it to be forced to 2.
 - Change import order and star thresholds
-- Disable [online services](https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-telemetry-reporting) such as telemetry and natural language search.
+- Disable [online services](https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-telemetry-reporting) such as telemetry and natural language search. Those features may send portions of what you have typed to Microsoft servers, which we would like to avoid. Some extensions may also include online services, please review all the settings in the Settings UI visible with the `@tag:usesOnlineServices` filter.
 
 All settings required as a JSON snippet (make sure to fix the local path):
 ```
-"java.format.settings.url": "/path/to/local/codestyle/sonatype-eclipse.xml",
-"java.format.settings.profile": "Sonatype",
-"editor.detectIndentation": false,
-"editor.tabSize": 2,
-"java.sources.organizeImports.starThreshold": 100,
-"java.sources.organizeImports.staticStarThreshold": 10,
-"java.completion.importOrder": [
-
-  "java",
-  "javax",
-  "javafx",
-  "com.sonatype",
-  "org.sonatype",
-  "",
-  "#"
-],
-"files.exclude": {
+{
+  "java.format.settings.url": "/path/to/local/codestyle/sonatype-eclipse.xml",
+  "java.format.settings.profile": "Sonatype",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "java.sources.organizeImports.starThreshold": 100,
+  "java.sources.organizeImports.staticStarThreshold": 10,
+  "java.completion.importOrder": [
+    "java",
+    "javax",
+    "javafx",
+    "com.sonatype",
+    "org.sonatype",
+    "",
+    "#"
+  ],
+  "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
-},
-"workbench.enableExperiments": false,
-"telemetry.enableTelemetry": false,
-"workbench.settings.enableNaturalLanguageSearch": false
+  },
+  "workbench.enableExperiments": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.settings.enableNaturalLanguageSearch": false
+}
 ```
 
 ## Basics

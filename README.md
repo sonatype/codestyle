@@ -66,7 +66,7 @@ VSCode uses Eclipse formatter settings. To import them clone this repository loc
 
 - Install Java Extension Pack
 - Configure Java formatter to use Eclipse settings. You need to specify the name of the profile as well (Sonatype).
-- Disable indentation guessing and set to to be forced to 2.
+- Disable indentation guessing and set it to be forced to 2.
 - Change import order and star thresholds
 - Disable [online services](https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-telemetry-reporting) such as telemetry and natural language search.
 

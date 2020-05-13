@@ -61,7 +61,7 @@ Import sonatype-visualstudio-resharper-settings.xml using ReSharper -> Options..
 
 ### VSCode
 
-- Install Java Extenstion Pack
+- Install Java Extension Pack
 - Set the following settings:
 ```
 "java.format.settings.url": "/path/to/local/codestyle/sonatype-eclipse.xml",

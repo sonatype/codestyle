@@ -104,9 +104,6 @@
   <JSCodeStyleSettings>
     <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
   </JSCodeStyleSettings>
-  <TypeScriptCodeStyleSettings version="0">
-    <option name="SPACES_WITHIN_OBJECT_TYPE_BRACES" value="false" />
-  </TypeScriptCodeStyleSettings>
   <XML>
     <option name="XML_KEEP_BLANK_LINES" value="1" />
     <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
@@ -470,11 +467,11 @@
     <option name="PARENT_SETTINGS_INSTALLED" value="false" />
     <option name="SOFT_MARGINS" value="120" />
   </codeStyleSettings>
-  <codeStyleSettings language="TypeScript">
+  <codeStyleSettings language="JavaScript">
     <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
-    <!-- https://google.github.io/styleguide/javaguide.html#s4.1.2-blocks-k-r-style -->
-    <option name="ELSE_ON_NEW_LINE" value="false" />
+    <option name="METHOD_BRACE_STYLE" value="5" />
+    <option name="ELSE_ON_NEW_LINE" value="true" />
     <option name="WHILE_ON_NEW_LINE" value="true" />
     <option name="CATCH_ON_NEW_LINE" value="true" />
     <option name="FINALLY_ON_NEW_LINE" value="true" />
@@ -490,6 +487,7 @@
     <option name="DOWHILE_BRACE_FORCE" value="3" />
     <option name="WHILE_BRACE_FORCE" value="1" />
     <option name="FOR_BRACE_FORCE" value="1" />
+    <option name="PARENT_SETTINGS_INSTALLED" value="true" />
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
       <option name="CONTINUATION_INDENT_SIZE" value="2" />

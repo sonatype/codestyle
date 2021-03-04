@@ -473,7 +473,8 @@
   <codeStyleSettings language="TypeScript">
     <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
-    <option name="ELSE_ON_NEW_LINE" value="true" />
+    <!-- https://google.github.io/styleguide/javaguide.html#s4.1.2-blocks-k-r-style -->
+    <option name="ELSE_ON_NEW_LINE" value="false" />
     <option name="WHILE_ON_NEW_LINE" value="true" />
     <option name="CATCH_ON_NEW_LINE" value="true" />
     <option name="FINALLY_ON_NEW_LINE" value="true" />

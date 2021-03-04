@@ -159,12 +159,31 @@ reformatting is done in a sane manner.
 one by one, as the code formatters (IDEA or Eclipse) tend to create some formats which can and **SHOULD** be manually
 cleaned up, else the code will end up **LESS** readable.
 
-## Javascript
+## JavaScript
 
-Follows "[Google Javascript Style Guide][javascript style page]" with 2 space indents to conform with Java code. Note that IDEA styles import at a global level such that sonatype-idea.xml will import both Java and Javascript style conventions.
+Follows "[Google JavaScript Style Guide][javascript style page]" with 2 space indents to conform with Java code. Note that IDEA styles import at a global level such that sonatype-idea.xml will import both Java and JavaScript style conventions.
 
 [java style pdf]:  http://its.lnpu.edu.ua/edocs1/new_doc/en/Vermeulen%20A.The%20elements%20of%20Java%20style.2001.pdf
 [javascript style page]: https://google.github.io/styleguide/javascriptguide.xml
+
+## TypeScript
+
+Similar to JavaScript, we prefer to follow Google's style guide. Google has a 
+[typescript style guide plugin](https://github.com/google/gts) which includes a useful linter with little setup 
+required.
+
+For IntelliJ, we have defined a TypeScript code-style that is largely a copy of the JavaScript code-style. An update to 
+IntelliJ made sometime around January 2021 introduced a change to how TypeScript code style is configured, or possibly 
+how it is linted, which resulted in a default set of TypeScript code-styles being introduced which violated some of our 
+preferred js-styles (4-space indents, etc.).
+
+View the `language="TypeScript"` section of the [idea code-style file](sonatype-idea.xml) for specific style rules.
+
+These rules do not all comply with the GTS plugin. For auto-formatting .js or.ts/.tsx files in IntelliJ, it may actually 
+be a better approach to use a [macro for performing an ESLint fix](https://www.jetbrains.com/help/idea/eslint.html). 
+Specifically, there is a simple configuration to perform an `eslint --fix` 
+[on save](https://www.jetbrains.com/help/idea/eslint.html#ws_eslint_configure_run_eslint_on_save). Until we can easily 
+align eslint rules with IntelliJ codestyle rules, relying on eslint for the formatting may be preferred.
 
 ## Scala
 

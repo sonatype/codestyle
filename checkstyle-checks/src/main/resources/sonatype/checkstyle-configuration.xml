@@ -22,6 +22,12 @@
 
   <module name="SuppressWarningsFilter" />
 
+  <module name="LineLength">
+    <property name="max" value="120"/>
+    <!-- Allow longer lines in comments. -->
+    <property name="ignorePattern" value="^ \*.*"/>
+  </module>
+
   <module name="TreeWalker">
     <module name="com.sonatype.checks.ClassStructureEmptyLineCheck" />
     <module name="SuppressWarningsHolder" />
@@ -32,11 +38,6 @@
       <property name="tokens" value="IMPORT, CLASS_DEF, INTERFACE_DEF, ENUM_DEF, STATIC_INIT, INSTANCE_INIT, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
     </module>
     <module name="OuterTypeFilename"/>
-    <module name="LineLength">
-      <property name="max" value="120"/>
-      <!-- Allow longer lines in comments. -->
-      <property name="ignorePattern" value="^ \*.*"/>
-    </module>
     <module name="UnusedImports"/>
     <module name="NoLineWrap"/>
     <module name="EmptyBlock">
@@ -151,11 +152,7 @@
     <module name="JavadocMethod">
       <property name="scope" value="public"/>
       <property name="allowMissingParamTags" value="true"/>
-      <property name="allowMissingThrowsTags" value="true"/>
       <property name="allowMissingReturnTag" value="true"/>
-      <property name="allowMissingJavadoc" value="true"/>
-      <property name="minLineCount" value="2"/>
-      <property name="allowThrowsTagsForSubclasses" value="true"/>
     </module>
     <module name="MethodName">
       <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>

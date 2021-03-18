@@ -1,0 +1,8 @@
+{
+  "name": "@sonatype/eslint-config-ts",
+  "version": "0.0.0",
+  "dependencies": {
+    "@sonatype/eslint-config-js": "*",
+    "gts": "^3.1.0"
+  }
+}

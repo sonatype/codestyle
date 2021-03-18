@@ -1,0 +1,8 @@
+{
+  "name": "@sonatype/eslint-config-js",
+  "version": "0.0.0",
+  "dependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

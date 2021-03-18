@@ -5,3 +5,4 @@ target/
 .project
 .DS_Store
 .settings/
+node_modules

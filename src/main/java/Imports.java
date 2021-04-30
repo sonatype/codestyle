@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.crypto.NullCipher;
 
 import static java.lang.Math.min;

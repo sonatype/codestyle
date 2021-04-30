@@ -52,8 +52,6 @@ See [the Intellij documentation](https://www.jetbrains.com/help/idea/copying-cod
 See [the eclipse documentation](http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fpreferences%2Fjava%2Fcodestyle%2Fref-preferences-formatter.htm) for how to import the files into your IDE.
 In addition, html indentation settings are not exported, but can be set to 2 spaces from Preferences -> Web -> HTML Files -> Editor -> "Indent using spaces". [Screenshot of the eclipse config here.](https://s3.amazonaws.com/uploads.hipchat.com/18157/88592/RSkQhq8UYnxf81Z/upload.png)
 
-Note that Eclipse's _Organize Imports_ feature does not group imports by 1st party, 3rd party, etc. as defined by Checkstyle rules.
-
 ### Visual Studio
 
 Import sonatype-visualstudio-settings.xml using Tools -> Import and Export Settings...

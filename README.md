@@ -155,7 +155,7 @@ configuration for import handling, etc which is not ideal.
 It should be possible to craft separate configurations which are _mostly_ compatible and thus avoid _most_ noise if
 reformatting is done in a sane manner.
 
-**DO NOT** reformat entire codebases, but reformat as sources are touched to normalize.   Or normalize and _santizie_
+**DO NOT** reformat entire codebases, but reformat as sources are touched to normalize.   Or normalize and _sanitize_
 one by one, as the code formatters (IDEA or Eclipse) tend to create some formats which can and **SHOULD** be manually
 cleaned up, else the code will end up **LESS** readable.
 
@@ -187,7 +187,7 @@ Checkstyle
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.1.2</version>
         <configuration>
           <consoleOutput>true</consoleOutput>
           <configLocation>sonatype/checkstyle-configuration.xml</configLocation>
@@ -202,9 +202,14 @@ Checkstyle
         </executions>
         <dependencies>
           <dependency>
+            <groupId>com.puppycrawl.tools</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>8.42</version>
+          </dependency>
+          <dependency>
             <groupId>com.sonatype</groupId>
             <artifactId>checkstyle-checks</artifactId>
-            <version>8</version>
+            <version>15</version>
           </dependency>
         </dependencies>
       </plugin>

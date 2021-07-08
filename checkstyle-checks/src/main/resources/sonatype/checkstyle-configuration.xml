@@ -23,6 +23,12 @@
 
   <module name="SuppressWarningsFilter" />
 
+  <module name="LineLength">
+    <property name="max" value="120"/>
+    <!-- Allow longer lines in comments. -->
+    <property name="ignorePattern" value="^ \*.*"/>
+  </module>
+
   <module name="TreeWalker">
     <module name="com.sonatype.checks.ClassStructureEmptyLineCheck" />
     <module name="SuppressWarningsHolder" />
@@ -33,11 +39,6 @@
       <property name="tokens" value="IMPORT, CLASS_DEF, INTERFACE_DEF, ENUM_DEF, STATIC_INIT, INSTANCE_INIT, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
     </module>
     <module name="OuterTypeFilename"/>
-    <module name="LineLength">
-      <property name="max" value="120"/>
-      <!-- Allow longer lines in comments. -->
-      <property name="ignorePattern" value="^ \*.*"/>
-    </module>
     <module name="UnusedImports"/>
     <module name="NoLineWrap"/>
     <module name="EmptyBlock">
@@ -136,11 +137,6 @@
       <property name="lineWrappingIndentation" value="4"/>
       <property name="arrayInitIndent" value="2"/>
     </module>
-    <module name="CustomImportOrder">
-      <property name="separateLineBetweenGroups" value="true"/>
-      <property name="customImportOrderRules" value="STANDARD_JAVA_PACKAGE###SPECIAL_IMPORTS###THIRD_PARTY_PACKAGE###STATIC"/>
-      <property name="specialImportsRegExp" value="^(com|org)\.sonatype\..*$"/>
-    </module>
     <module name="MethodParamPad"/>
     <module name="AnnotationLocation">
       <property name="tokens" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF"/>
@@ -150,13 +146,9 @@
       <property name="allowSamelineMultipleAnnotations" value="true"/>
     </module>
     <module name="JavadocMethod">
-      <property name="scope" value="public"/>
+      <property name="accessModifiers" value="public"/>
       <property name="allowMissingParamTags" value="true"/>
-      <property name="allowMissingThrowsTags" value="true"/>
       <property name="allowMissingReturnTag" value="true"/>
-      <property name="allowMissingJavadoc" value="true"/>
-      <property name="minLineCount" value="2"/>
-      <property name="allowThrowsTagsForSubclasses" value="true"/>
     </module>
     <module name="MethodName">
       <property name="format" value="^[a-z][a-zA-Z0-9_]*$"/>

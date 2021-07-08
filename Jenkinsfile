@@ -8,7 +8,7 @@
 def settings = [
   javaVersion: 'Java 8',
   mavenVersion: 'Maven 3.2.x',
-  usePublicSettingsXmlFile: false,
+  usePublicSettingsXmlFile: true,
   useEventSpy: false,
   testResults: ['**/target/*-reports/*.xml'],
   distFiles: [

@@ -115,7 +115,7 @@ All settings required as a JSON snippet (make sure to fix the local path):
 
 #### IntelliJ IDEA
 
-Preferences -&gt; Editor -&gt; General \[ Other: Ensure line feed at file end on Save \]
+Preferences -&gt; Editor -&gt; General \[ On Save: Ensure every saved file ends with a line break \]
 
 ### NO TABS
 

@@ -76,6 +76,8 @@
   </JavaCodeStyleSettings>
   <JetCodeStyleSettings>
     <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+    <option name="NAME_COUNT_TO_USE_STAR_IMPORT" value="2147483647" />
+    <option name="NAME_COUNT_TO_USE_STAR_IMPORT_FOR_MEMBERS" value="2147483647" />
   </JetCodeStyleSettings>
   <GroovyCodeStyleSettings>
     <option name="USE_FQ_CLASS_NAMES_IN_JAVADOC" value="false" />
@@ -480,6 +482,7 @@
     <option name="PARAMETER_ANNOTATION_WRAP" value="1" />
     <indentOptions>
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="INDENT_SIZE" value="2" />
       <option name="TAB_SIZE" value="8" />
     </indentOptions>
   </codeStyleSettings>

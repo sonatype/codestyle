@@ -6,6 +6,7 @@
 @Library(['private-pipeline-library', 'jenkins-shared']) _
 
 def settings = [
+  deployBranch: 'main',
   javaVersion: 'Java 8',
   mavenVersion: 'Maven 3.2.x',
   usePublicSettingsXmlFile: true,

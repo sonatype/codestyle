@@ -14,7 +14,6 @@
   <description>PMD ruleset to be used with maven-pmd-plugin 3.9 or newer.</description>
 
   <!-- Unused code -->
-  <rule ref="category/java/bestpractices.xml/UnusedImports" />
   <rule ref="category/java/bestpractices.xml/UnusedFormalParameter" />
   <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
   <rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
@@ -22,9 +21,7 @@
   <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" /> -->
 
   <!-- Imports -->
-  <rule ref="category/java/codestyle.xml/DontImportJavaLang" />
-  <rule ref="category/java/codestyle.xml/DuplicateImports" />
-  <rule ref="category/java/errorprone.xml/ImportFromSamePackage" />
+  <rule ref="category/java/codestyle.xml/UnnecessaryImport" />
 
   <!-- Braces -->
   <rule ref="category/java/codestyle.xml/ControlStatementBraces" />

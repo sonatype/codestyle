@@ -8,7 +8,7 @@
 def settings = [
   deployBranch: 'main',
   javaVersion: 'Java 8',
-  mavenVersion: 'Maven 3.2.x',
+  mavenVersion: 'Maven 3.8.x',
   usePublicSettingsXmlFile: true,
   useEventSpy: false,
   testResults: ['**/target/*-reports/*.xml'],
@@ -17,7 +17,7 @@ def settings = [
     excludes: ['**/*-sources.jar*']
   ],
   notificationSender: { currentBuild, env ->
-    notifyChat(currentBuild: currentBuild, env: env, room: 'ops-builds')
+    notifyChat(currentBuild: currentBuild, env: env, room: 'bnr-notifications')
   }
 ]
 

@@ -8,7 +8,7 @@
 def settings = [
   deployBranch: 'main',
   javaVersion: 'Java 8',
-  mavenVersion: 'Maven 3.6.x',
+  mavenVersion: 'Maven 3.8.x',
   usePublicSettingsXmlFile: true,
   useEventSpy: false,
   testResults: ['**/target/*-reports/*.xml'],

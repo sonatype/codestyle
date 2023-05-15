@@ -180,7 +180,7 @@ See some [differences](java-scala-diff.md) from Java.
 Note that versions prior to 16 will work with Java 8 projects.  Versions starting with 17 are intended for use on Java 11 and later projects.
 
 ## Releasing
-After merging changes to the Checkstyle or PMD rulesets, a master snapshot build will run [here]( https://jenkins.ci.sonatype.dev/job/bnr/job/tools/job/codestyle/job/master-snapshot/ ).
+After merging changes to the Checkstyle or PMD rulesets, a main snapshot build will run [here]( https://jenkins.ci.sonatype.dev/job/bnr/job/tools/job/codestyle/job/main-snapshot/ ).
 Ensure that passes, then run the release job [here]( https://jenkins.ci.sonatype.dev/job/bnr/job/tools/job/codestyle/job/release/ ).
 After building a new release, update any builds to use new rule versions as appropriate
 

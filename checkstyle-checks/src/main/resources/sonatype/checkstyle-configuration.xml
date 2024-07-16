@@ -32,7 +32,6 @@
   <module name="TreeWalker">
     <module name="com.sonatype.checks.ClassStructureEmptyLineCheck" />
     <module name="SuppressWarningsHolder" />
-    <module name="UnnecessaryParentheses"/>
     <module name="EmptyLineSeparator">
       <property name="allowMultipleEmptyLines" value="false" />
       <property name="allowMultipleEmptyLinesInsideClassMembers" value="false" />

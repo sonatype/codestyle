@@ -192,7 +192,7 @@ Checkstyle
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.6.0</version>
         <configuration>
           <consoleOutput>true</consoleOutput>
           <configLocation>sonatype/checkstyle-configuration.xml</configLocation>
@@ -207,14 +207,9 @@ Checkstyle
         </executions>
         <dependencies>
           <dependency>
-            <groupId>com.puppycrawl.tools</groupId>
-            <artifactId>checkstyle</artifactId>
-            <version>8.42</version>
-          </dependency>
-          <dependency>
             <groupId>com.sonatype</groupId>
             <artifactId>checkstyle-checks</artifactId>
-            <version>15</version>
+            <version>20</version>
           </dependency>
         </dependencies>
       </plugin>

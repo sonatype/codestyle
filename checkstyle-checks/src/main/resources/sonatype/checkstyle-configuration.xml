@@ -25,8 +25,8 @@
 
   <module name="LineLength">
     <property name="max" value="120"/>
-    <!-- Allow longer lines in comments. -->
-    <property name="ignorePattern" value="^ \*.*"/>
+    <!-- Allow longer lines in block comments and whole string literals -->
+    <property name="ignorePattern" value='^ +\*|"[^"]{100,}"'/>
   </module>
 
   <module name="TreeWalker">

@@ -82,5 +82,5 @@
       </plugin>
     </plugins>
   </build>
-<version>21-SNAPSHOT</version>
+<version>21</version>
 </project>
